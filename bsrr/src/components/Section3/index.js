@@ -25,15 +25,13 @@ const Section3 = () => {
         <h1 className="w-full absolute text-center text-white invisible sm:visible sm:text-2xl font-bold mt-10  md:text-3xl md:mt-14 lg:mt-20 lg:text-5xl ">
           Бид Амьтанд Хайртай
         </h1>
-        <img
-          className="hidden lg:flex lg:visible bg-cover  bg-top bg-fixed"
+        <img  className="hidden lg:flex lg:visible bg-cover  bg-top bg-fixed"
           src={PostImgBig}
           alt="Cover Post Image"
         />
-        <img
-          className="  lg:hidden bg-cover bg-top bg-fixed"
+        <img className="  lg:hidden bg-cover bg-top bg-fixed"
           src={PostImgSmall}
-          alt="Cover Post Image"
+          alt="Cover small Image"
         />
       </div>
     </section>

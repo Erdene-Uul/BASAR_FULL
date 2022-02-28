@@ -29,7 +29,7 @@ const Navbar = (props) => {
       <div className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 ">
         <Link to="/" className="text-2xl flex cursor-pointer">
           <div className="flex shrink-0 ">
-            <img className="h-10" src={logo_image} />
+            <img className="h-10" src={logo_image} alt="logo"/>
           </div>
 
           <div className="flex shrink-0">

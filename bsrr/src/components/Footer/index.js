@@ -81,7 +81,7 @@ const Footer = () => {
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             БЛОГ
                         </div>
-                        <a className="" to="/">Нийтлэл</a>
+                        <Link className="" to="/">Нийтлэл</Link>
                         <div
                             className="font-medium border-orange-500 border-l-2 pl-1 mb-2 mt-8"
                         >

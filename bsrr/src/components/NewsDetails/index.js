@@ -18,7 +18,7 @@ class NewsDetails extends React.Component {
                             <h1 className="my-10 font-bold font-Roboto text-3xl leading-10">{this.news.title}</h1>
                         </div>
                         <div className="flex mb-10 ">
-                            <img className="h-16 rounded-full" src={this.news.author.photo} />
+                            <img className="h-16 rounded-full" alt="author" src={this.news.author.photo} />
                             <div className="flex flex-col ml-4">
                                 <div className="mt-2 text-base font-semibold">{this.news.author.name}</div>
                                 <div className="text-sm font-mediumd text-[#64C5F8]">{this.news.author.position}</div>
@@ -29,7 +29,7 @@ class NewsDetails extends React.Component {
                         <div className="text-[#464C53]">
                             <div className="whitespace-pre-wrap">  {this.news.content.content1}</div>
                             <div className="w-112">
-                                <img className="h-80 my-6 border" src={this.news.photo} />
+                                <img className="h-80 my-6 border" alt="news" src={this.news.photo} />
                             </div>
                             <div className="whitespace-pre-wrap">
                                 {this.news.content.content2}
