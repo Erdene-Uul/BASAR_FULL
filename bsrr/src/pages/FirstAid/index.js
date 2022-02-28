@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
+import Firstaid from "../../assets/images/pages/FirstAid.png";
 class FirstAid extends Component {
     render() {
         return (
-            <div style={{marginTop: "100px", marginLeft: "30px", fontSize: "35px"}}>
-                FirstAid Page
+            <div>
+                <img src={Firstaid} alt="Firstaid"/>
             </div>
         );
     }

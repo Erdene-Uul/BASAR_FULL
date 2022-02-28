@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import notfound from "../../assets/images/pages/NotFound.png";
-class Blog extends Component {
+class Login extends Component {
     render() {
         return (
             <div>
@@ -9,4 +9,4 @@ class Blog extends Component {
         );
     }
 }
-export default Blog;
+export default Login;

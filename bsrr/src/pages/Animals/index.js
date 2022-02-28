@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import animals from "../../assets/images/pages/animals.png";
 
 class Animals extends Component {
     render() {
         return (
-            <div style={{marginTop: "100px", marginLeft: "30px", fontSize: "35px"}}>
-                Animals Page
+            <div>
+                <img src={animals} alt="animals"/>
             </div>
         );
     }

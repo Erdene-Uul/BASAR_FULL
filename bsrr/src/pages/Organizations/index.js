@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
+import organizations from "../../assets/images/pages/organizations.png";
 class Organizations extends Component {
     render() {
         return (
-            <div style={{marginTop: "100px", marginLeft: "30px", fontSize: "35px"}}>
-                Organizations Page
+            <div>
+                <img src={organizations} alt="organizations"/>
             </div>
         );
     }

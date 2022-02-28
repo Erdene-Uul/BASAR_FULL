@@ -11,6 +11,8 @@ import NewsDetails from "../../components/NewsDetails";
 import Footer from "../../components/Footer";
 import MFooter from "../../components/MobileFooter";
 import { Route, Switch } from "react-router-dom";
+import Shop from "../OnlineShop";
+import Login from "../Login";
 
 
 class App extends Component {
@@ -27,6 +29,8 @@ class App extends Component {
             <Route path="/services" component={Services} />
             <Route path="/first_aid" component={FirstAid} />
             <Route path="/news_details" component={NewsDetails} />
+            <Route path="/shop" component={Shop} />
+            <Route path="/login" component={Login} />
             <Route path="/" component={Home} />
           </Switch>
         </main>

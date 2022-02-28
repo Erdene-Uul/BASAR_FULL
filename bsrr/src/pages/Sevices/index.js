@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
+import service from "../../assets/images/pages/service.png";
 class Services extends Component {
     render() {
         return (
-            <div style={{marginTop: "100px", marginLeft: "30px", fontSize: "35px"}}>
-                Services Page
+            <div>
+                <img src={service} alt="service"/>
             </div>
         );
     }
