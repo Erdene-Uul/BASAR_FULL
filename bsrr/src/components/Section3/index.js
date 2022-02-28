@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import PostImgBig from "../../assets/images/niitlel_big.png";
 import PostImgSmall from "../../assets/images/niitlel_small.png";
 
