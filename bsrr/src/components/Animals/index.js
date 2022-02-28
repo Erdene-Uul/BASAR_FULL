@@ -123,14 +123,14 @@ const Animals = () => {
               src={guinea}
               alt="usan gahai"
             />
-            <link
+            <Link
               to="/"
               className="bg-indigo-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
             >
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Усан гахай
               </h1>
-            </link>
+            </Link>
           </div>
         </div>
       </section>
