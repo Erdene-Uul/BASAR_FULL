@@ -3,6 +3,7 @@ import playStore from '../../assets/images/footer_img/playstore.png';
 import appStore from '../../assets/images/footer_img/appstore.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -25,40 +26,40 @@ const Footer = () => {
                         </div>
                         <ul className="leading-6">
                             <li>
-                                <a href="#">Нохой </a>
+                                <Link to="/">Нохой </Link>
                             </li>
                             <li>
-                                <a href="#">Муур</a>
+                                <Link to="/">Муур</Link>
                             </li>
                             <li>
-                                <a href="#"> Туулай</a>
+                                <Link to="/"> Туулай</Link>
                             </li>
                             <li>
-                                <a href="#"> Шувуу</a>
+                                <Link to="/"> Шувуу</Link>
                             </li>
                             <li>
-                                <a href="#"> Зараа</a>
+                                <Link to="/"> Зараа</Link>
                             </li>
                             <li>
-                                <a href="#"> Загас</a>
+                                <Link to="/"> Загас</Link>
                             </li>
                             <li>
-                                <a href="#"> Гүрвэл</a>
+                                <Link to="/"> Гүрвэл</Link>
                             </li>
                             <li>
-                                <a href="#"> Яст мэлхий</a>
+                                <Link to="/"> Яст мэлхий</Link>
                             </li>
                             <li>
-                                <a href="#"> Орог зусаг</a>
+                                <Link to="/"> Орог зусаг</Link>
                             </li>
                             <li>
-                                <a href="#"> Фирм</a>
+                                <Link to="/"> Фирм</Link>
                             </li>
                             <li>
-                                <a href="#"> Таван хошуу</a>
+                                <Link to="/"> Таван хошуу</Link>
                             </li>
                             <li>
-                                <a href="#"> Бусад</a>
+                                <Link to="/"> Бусад</Link>
                             </li>
                         </ul>
                     </div>
@@ -68,19 +69,19 @@ const Footer = () => {
                         </div>
                         <ul className="leading-6 mb-8">
                             <li>
-                                <a href="#">Байгууллага </a>
+                                <Link to="/">Байгууллага </Link>
                             </li>
                             <li>
-                                <a href="#"> Төрийн бус</a>
+                                <Link to="/"> Төрийн бус</Link>
                             </li>
                             <li>
-                                <a href="#">Дэлхий дахинд</a>
+                                <Link to="/">Дэлхий дахинд</Link>
                             </li>
                         </ul>
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             БЛОГ
                         </div>
-                        <a className="" href="#">Нийтлэл</a>
+                        <a className="" to="/">Нийтлэл</a>
                         <div
                             className="font-medium border-orange-500 border-l-2 pl-1 mb-2 mt-8"
                         >
@@ -88,13 +89,13 @@ const Footer = () => {
                         </div>
                         <ul className="leading-6">
                             <li>
-                                <a href="#">Үрчлүүлнэ </a>
+                                <Link to="/">Үрчлүүлнэ </Link>
                             </li>
                             <li>
-                                <a href="#">Хайж байна</a>
+                                <Link to="/">Хайж байна</Link>
                             </li>
                             <li>
-                                <a href="#"> Зарна</a>
+                                <Link to="/"> Зарна</Link>
                             </li>
                         </ul>
                     </div>
@@ -104,25 +105,25 @@ const Footer = () => {
                         </div>
                         <ul className="leading-6 mb-5">
                             <li>
-                                <a href="#">Байгууллага </a>
+                                <Link to="/">Байгууллага </Link>
                             </li>
                             <li>
-                                <a href="#"> Төрийн бус</a>
+                                <Link to="/"> Төрийн бус</Link>
                             </li>
                             <li>
-                                <a href="#"> Мал эмнэлэг</a>
+                                <Link to="/"> Мал эмнэлэг</Link>
                             </li>
                             <li>
-                                <a href="#"> Сургалтын газар</a>
+                                <Link to="/"> Сургалтын газар</Link>
                             </li>
                             <li>
-                                <a href="#"> Гоо сайхны газар</a>
+                                <Link to="/"> Гоо сайхны газар</Link>
                             </li>
                             <li>
-                                <a href="#"> Үрчлүүлгын газар</a>
+                                <Link to="/"> Үрчлүүлгын газар</Link>
                             </li>
                             <li>
-                                <a href="#"> Төсөл хөтөлбөр</a>
+                                <Link to="/"> Төсөл хөтөлбөр</Link>
                             </li>
                         </ul>
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
@@ -130,28 +131,28 @@ const Footer = () => {
                         </div>
                         <ul className="leading-6">
                             <li>
-                                <a href="#">Халуурах </a>
+                                <Link to="/">Халуурах </Link>
                             </li>
                             <li>
-                                <a href="#"> Яс хугарах</a>
+                                <Link to="/"> Яс хугарах</Link>
                             </li>
                             <li>
-                                <a href="#"> Гахах</a>
+                                <Link to="/"> Гахах</Link>
                             </li>
                             <li>
-                                <a href="#"> Ухаан алдах</a>
+                                <Link to="/"> Ухаан алдах</Link>
                             </li>
                             <li>
-                                <a href="#"> Шархдах</a>
+                                <Link to="/"> Шархдах</Link>
                             </li>
                             <li>
-                                <a href="#"> Цахилгаанд цохиулах</a>
+                                <Link to="/"> Цахилгаанд цохиулах</Link>
                             </li>
                             <li>
-                                <a href="#">Хоолонд хордох</a>
+                                <Link to="/">Хоолонд хордох</Link>
                             </li>
                             <li>
-                                <a href="#">Бөөстөх</a>
+                                <Link to="/">Бөөстөх</Link>
                             </li>
                         </ul>
                     </div>
@@ -161,28 +162,28 @@ const Footer = () => {
                         </div>
                         <ul className="leading-6">
                             <li>
-                                <a href="#">Хоол тэжээл </a>
+                                <Link to="/">Хоол тэжээл </Link>
                             </li>
                             <li>
-                                <a href="#">Гоо сайхан </a>
+                                <Link to="/">Гоо сайхан </Link>
                             </li>
                             <li>
-                                <a href="#"> Хувцас</a>
+                                <Link to="/"> Хувцас</Link>
                             </li>
                             <li>
-                                <a href="#">Тоглоом</a>
+                                <Link to="/">Тоглоом</Link>
                             </li>
                             <li>
-                                <a href="#"> Гоёл </a>
+                                <Link to="/"> Гоёл </Link>
                             </li>
                             <li>
-                                <a href="#">Ахуйн хэрэгсэл</a>
+                                <Link to="/">Ахуйн хэрэгсэл</Link>
                             </li>
                             <li>
-                                <a href="#">Дагалдах хэрэгсэл </a>
+                                <Link to="/">Дагалдах хэрэгсэл </Link>
                             </li>
                             <li>
-                                <a href="#">Бусад</a>
+                                <Link to="/">Бусад</Link>
                             </li>
                         </ul>
                     </div>
@@ -195,11 +196,11 @@ const Footer = () => {
                         <div className="mt-12 mb-8">
                             <ul className="flex justify-around">
                                 <li>
-                                    <a href="#">
+                                    <Link to="/">
                                         <div className="p-3 rounded-lg">
                                             <FontAwesomeIcon icon={brands('Facebook')} size="3x" />
                                         </div>
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 <li>
@@ -209,21 +210,21 @@ const Footer = () => {
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <Link to="/">
                                         <div className="p-3 rounded-lg">
                                             <FontAwesomeIcon icon={brands('Twitter')} size="3x" />
                                         </div>
 
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <Link to="/">
                                         <div className="p-3 rounded-lg">
                                             <FontAwesomeIcon icon={brands('Youtube')} size="3x" />
                                         </div>
 
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -240,21 +241,20 @@ const Footer = () => {
                     <p>All reserved by @basarmn</p>
                     <ul className="flex">
                         <li className="mx-6 my-2">
-                            <a href="#" className="hover:text-slate-800 duration-400"
-                            >БИДНИЙ ТУХАЙ</a >
+                            <Link to="/" className="hover:text-slate-800 duration-400"
+                            >БИДНИЙ ТУХАЙ</ Link>
                         </li>
                         <li className="mx-6 my-2">
-                            <a href="#" className="hover:text-slate-800 duration-400"
-                            >DONATE VOLUNTEER</a >
+                            <Link to="/" className="hover:text-slate-800 duration-400"
+                            >DONATE VOLUNTEER</Link >
                         </li>
                         <li className="mx-6 my-2">
-                            <a href="#" className="hover:text-slate-800 duration-400"
-                            >ХАМТРАН АЖИЛЛАХ</a  >
+                            <Link to="/" className="hover:text-slate-800 duration-400"
+                            >ХАМТРАН АЖИЛЛАХ</ Link >
                         </li>
                         <li className="mx-6 my-2">
-                            <a href="#" className="hover:text-slate-800 duration-400"
-                            >ХОЛБОО БАРИХ</a
-                            >
+                            <Link to="/" className="hover:text-slate-800 duration-400"
+                            >ХОЛБОО БАРИХ</Link>
                         </li>
                     </ul>
                 </div>

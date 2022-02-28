@@ -28,11 +28,11 @@ const MFooter = () => {
                 <div className="mt-10 mb-6">
                     <ul className="flex justify-around">
                         <li>
-                            <a href="#">
+                            <Link to="/">
                                 <div className="p-3 rounded-lg">
                                     <FontAwesomeIcon icon={brands('Facebook')} size="2x" className="hover:text-[#3b5998]" />
                                 </div>
-                            </a>
+                            </Link>
                         </li>
 
                         <li>
@@ -42,21 +42,21 @@ const MFooter = () => {
                         </li>
 
                         <li>
-                            <a href="#">
+                            <Link to="/">
                                 <div className="p-3 rounded-lg">
                                     <FontAwesomeIcon icon={brands('Twitter')} size="2x" className="hover:text-[#00acee]" />
                                 </div>
 
-                            </a>
+                            </Link>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <Link to="/">
                                 <div className="p-3 rounded-lg">
                                     <FontAwesomeIcon icon={brands('Youtube')} size="2x" className="hover:text-[#FF0000]" />
                                 </div>
 
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -73,11 +73,11 @@ const MFooter = () => {
                     <ul className="flex space-x-5">
 
                         <li className=" my-2">
-                            <Link href="#" className="hover:text-slate-800 duration-400"
+                            <Link to="/" className="hover:text-slate-800 duration-400"
                             >Хамтран ажиллах</Link >
                         </li>
                         <li className="my-2">
-                            <Link href="#" className="hover:text-slate-800 duration-400"
+                            <Link to="/" className="hover:text-slate-800 duration-400"
                             >Холбоо барих</Link>
                         </li>
                     </ul>

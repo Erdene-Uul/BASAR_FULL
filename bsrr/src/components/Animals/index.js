@@ -7,6 +7,7 @@ import turtle from '../../assets/images/animals/turtle.png';
 import zaraa from '../../assets/images/animals/zaraa.png';
 import dog from '../../assets/images/animals/dog.png';
 import guinea from '../../assets/images/animals/guinea.png';
+import { Link } from "react-router-dom";
 const Animals = () => {
     return (
         <section className="wrapper my-12 h-52.0625rem ">
@@ -21,11 +22,11 @@ const Animals = () => {
               src={dog}
               alt="dog"
             />
-            <a href="" className="bg-sky-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/" className="bg-sky-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Нохой
               </h1>
-            </a>
+            </Link>
           </div>
   
           
@@ -35,14 +36,14 @@ const Animals = () => {
               src={cat}
               alt="cat"
             />
-            <a
-              href=""
+            <Link
+              to="/"
               className="bg-amber-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
             >
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Муур
               </h1>
-            </a>
+            </Link>
           </div>
   
           
@@ -52,11 +53,11 @@ const Animals = () => {
               src={rabbit1}
               alt="rabbit"
             />
-            <a href="" className="bg-zinc-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/" className="bg-zinc-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Туулай
               </h1>
-            </a>
+            </Link>
           </div>
   
           
@@ -66,11 +67,11 @@ const Animals = () => {
               src={bird}
               alt="bird"
             />
-            <a href="" className="bg-lime-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/" className="bg-lime-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Шувуу
               </h1>
-            </a>
+            </Link>
           </div>
   
           <div className="animals-responsive w-1/2">
@@ -79,11 +80,11 @@ const Animals = () => {
               src={turtle}
               alt="turtle"
             />
-            <a href="" className="bg-red-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/" className="bg-red-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Яст мэлхий
               </h1>
-            </a>
+            </Link>
           </div>
 
           <div className="animals-responsive w-1/2">
@@ -92,11 +93,11 @@ const Animals = () => {
               src={fish}
               alt="fish"
             />
-            <a href="" className="bg-sky-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/" className="bg-sky-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-indigo-900 text-2xl absolute mt-12 ml-2">
                 Загас
               </h1>
-            </a>
+            </Link>
           </div>
 
           <div className="animals-responsive w-1/2">
@@ -105,14 +106,14 @@ const Animals = () => {
               src={zaraa}
               alt="zaraa"
             />
-            <a
-              href=""
+            <Link
+              to="/"
               className="bg-purple-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
             >
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Зараа
               </h1>
-            </a>
+            </Link>
           </div>
   
   
@@ -122,14 +123,14 @@ const Animals = () => {
               src={guinea}
               alt="usan gahai"
             />
-            <a
-              href=""
+            <link
+              to="/"
               className="bg-indigo-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
             >
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Усан гахай
               </h1>
-            </a>
+            </link>
           </div>
         </div>
       </section>
