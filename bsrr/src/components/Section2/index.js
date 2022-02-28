@@ -11,7 +11,7 @@ class Section2 extends React.Component {
 
     componentDidMount() {
         axios
-            .get(`${process.env.PORT}/api/v1/news`)
+            .get(`${process.env.REACT_APP_API_URL}/api/v1/news`)
             .then(response => {
                 this.setState({ news: response.data.data });
             })

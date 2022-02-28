@@ -595,3 +595,6 @@
 ::1 - - [28/Feb/2022:07:27:00 +0000] "GET /api/v1/news HTTP/1.1" 200 94698 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
 ::1 - - [28/Feb/2022:07:27:01 +0000] "GET /api/v1/news HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
 ::1 - - [28/Feb/2022:07:27:06 +0000] "GET /api/v1/commercials HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
+::1 - - [28/Feb/2022:13:32:24 +0000] "GET /api/v1/news HTTP/1.1" 200 94698 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
+::1 - - [28/Feb/2022:13:32:54 +0000] "GET /api/v1/news HTTP/1.1" 200 94698 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
+::1 - - [28/Feb/2022:13:32:55 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/api/v1/news" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"

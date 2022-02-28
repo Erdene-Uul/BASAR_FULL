@@ -4,6 +4,7 @@ import axios from "axios";
 import BigContent from "../../components/BigContent";
 import PostBg from "../../assets/images/niitlel.png";
 import Section2 from "../../components/Section2";
+console.log(process.env)
 
 
 
@@ -18,7 +19,7 @@ class News extends Component {
     }
 
     componentDidMount() {
-        axios.get(`${process.env.PORT}/api/v1/news`).then(res => {
+        axios.get(`${process.env.REACT_APP_API_URL}/api/v1/news`).then(res => {
             this.setState({ news: res.data.data })
         }).finally(() => {
 
