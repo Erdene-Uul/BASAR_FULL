@@ -26,12 +26,14 @@ const Section3 = () => {
           Бид Амьтанд Хайртай
         </h1>
         <img  className="hidden lg:flex lg:visible bg-cover  bg-top bg-fixed"
+        alt="postbg"
           src={PostImgBig}
-          alt="Cover Post Image"
+       
         />
         <img className="  lg:hidden bg-cover bg-top bg-fixed"
+        alt="postbgg"
           src={PostImgSmall}
-          alt="Cover small Image"
+          
         />
       </div>
     </section>
