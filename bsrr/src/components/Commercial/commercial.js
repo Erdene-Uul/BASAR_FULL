@@ -8,7 +8,7 @@ export default class Commercial extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8000/api/v1/commercials').then(res => {
+        axios.get(`${process.env.PORT}/api/v1/commercials`).then(res => {
             this.setState({ commercials: res.data.data });
         })
     }

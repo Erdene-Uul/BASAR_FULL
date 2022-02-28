@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "../../axios-news";
+import axios from "axios";
 import Card from "../Card";
 import Carousel from 'react-elastic-carousel'
 
@@ -11,7 +11,7 @@ class Section2 extends React.Component {
 
     componentDidMount() {
         axios
-            .get('/news')
+            .get(`${process.env.PORT}/api/v1/news`)
             .then(response => {
                 this.setState({ news: response.data.data });
             })
