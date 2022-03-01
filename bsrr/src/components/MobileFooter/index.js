@@ -1,29 +1,38 @@
 import React from "react";
-import playStore from '../../assets/images/footer_img/playstore.png';
-import appStore from '../../assets/images/footer_img/appstore.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+import playStore from "../../assets/images/footer_img/playstore.png";
+import appStore from "../../assets/images/footer_img/appstore.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { Link } from "react-router-dom";
 const MFooter = () => {
     return (
-
-        <footer className="h-43 w-full lg:hidden">
-            <div className="px-4 flex justify-center box-border items-center h-24 w-full bg-gradient-to-r from-footerTop1 to-[#FF834F] text-white">
-                <div className="text-xs font-light mr-2" >
-                    ЦАГ АЛДАЛГҮЙ МЭДЭЭЛЭЛ <span className="font-bold">ХҮЛЭЭЖ АВААРАЙ</span>
-                </div>
-                <div className="flex justify-between border border-l-bgServiceColor h-9 w-80 rounded-full">
-                    <span className="flex justify-start text-sm items-center leading-4 ml-2">Мэйл хаяг</span>
-                    <button className="bg-white rounded-full text-black h-auto w-24 text-sm font-bold">Илгээх</button>
-                </div>
+        <footer className="h-43 w-full  lg:hidden">
+          <div className="px-4 flex justify-center box-border items-center h-24 w-full bg-gradient-to-r from-footerTop1 to-[#FF834F] text-white">
+            <div className="text-xs font-light mr-2">
+              ЦАГ АЛДАЛГҮЙ МЭДЭЭЛЭЛ{" "}
+              <span className="font-bold">ХҮЛЭЭЖ АВААРАЙ</span>
             </div>
-            <div className="h-full m-12">
-                <div className="">
-                    <div className="flex items-center justify-around">
-                        <FontAwesomeIcon icon={solid('headset')} size="2x" />
-                        <span className="text-baseg font-medium font-Montserrat ml-2 mr-6 ">77111208</span>
-                        <button className="px-9 py-2 border font-Montserrat rounded-lg text-sm text-[#9B9B9B] ">Чатлах</button>
-                    </div> </div>
+            <div className="flex justify-between border border-l-bgServiceColor h-9 w-80 rounded-full">
+              <span className="flex justify-start text-sm items-center leading-4 ml-2">
+                Мэйл хаяг
+              </span>
+              <button className="bg-white rounded-full text-black h-auto w-24 text-sm font-bold">
+                Илгээх
+              </button>
+            </div>
+          </div>
+          <div className="h-full m-12">
+            <div className="">
+              <div className="flex items-center justify-around">
+                <FontAwesomeIcon icon={solid("headset")} size="2x" />
+                <span className="text-baseg font-medium font-Montserrat ml-2 mr-6 ">
+                  72110737
+                </span>
+                <button className="px-9 py-2 border font-Montserrat rounded-lg text-sm text-[#9B9B9B] ">
+                  Чатлах
+                </button>
+              </div>{" "}
+            </div>
 
                 <div className="mt-10 mb-6">
                     <ul className="flex justify-around">

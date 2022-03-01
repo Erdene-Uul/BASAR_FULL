@@ -18,8 +18,8 @@ class Content extends React.Component {
                         </button>
                     </div>
 
-                    <div className="lg:ml-8 md:w-80 md:ml-3 ">
-                        <h2 className="text-[#252641] md:text-base text-sm w-44 h-32 md:selection md:w-80 leading-5 font-medium md:leading-7  md:pt-2">{this.props.news.title}</h2>
+                    <div className="lg:ml-8 md:w-80  md:ml-3 ">
+                        <h2 className="text-[#252641]  md:text-base text-sm w-44  md:w-80 leading-5 font-medium md:leading-7">{this.props.news.title}</h2>
                         <p className="text-[#696984]  text-sm mt-3 hidden md:block">{this.props.news.description}</p>
                     </div>
                 </NavLink>

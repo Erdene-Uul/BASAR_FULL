@@ -187,10 +187,10 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-span-2 border-slate-600 border-l-2 lg:pl-14 pl-8">
+                    <div className="col-span-2 border-slate-400 border-l-2 lg:pl-14 pl-8">
                         <div className="flex items-center">
                             <FontAwesomeIcon icon={solid('headset')} size="3x" />
-                            <p className="text-lg font-medium mx-10 font-Montserrat">77111208</p>
+                            <p className="text-lg font-medium mx-10 font-Montserrat">7211-0737</p>
                             <button className="lg:px-9 py-2 border text-[#9B9B9B] rounded-lg font-Montserrat">Чатлах</button>
                         </div>
                         <div className="mt-12 mb-8">

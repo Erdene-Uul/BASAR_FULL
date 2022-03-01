@@ -1,5 +1,5 @@
 import React from "react";
-import ZarImg from "../../assets/images/zar1.png";
+import ZarImg from "../../assets/images/zarBig.png";
 import ZarImgSmall from "../../assets/images/zar_small.png";
 
 const Section5 = () => {

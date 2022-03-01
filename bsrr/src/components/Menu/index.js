@@ -3,7 +3,7 @@ import MenuItem from "../MenuItem";
 
 const Menu = (props) => {
   return (
-    <div className="  flex w-6/12 m-auto">
+    <div className="  flex w-6/12">
       <ul className="hidden lg:flex lg:justify-between lg:items-center relative  font-thin">
         <MenuItem exact link="/">
           Нүүр

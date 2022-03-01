@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .wrapper {
-  @apply mx-36;
+  @apply mx-12 md:mx-36;
 }
 /* mobile wrapper*/
 .m-wrapper {
