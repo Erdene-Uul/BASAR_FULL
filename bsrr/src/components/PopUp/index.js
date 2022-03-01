@@ -1,13 +1,10 @@
 import React from 'react';
 import logo from "../../assets/images/menu_logo/menu_logo.png";
-import Shadow from '../Shadow';
 
 const Popup = (props) => {
     return (props.show) ? (
-        <div className='h-full w-full flex justify-center items-center fixed z-500 font-Roboto text-sm'>
-          {/* <Shadow close = {props.closePopup} show = { props.show }/>  */}
+        <div className='flex justify-center items-center w-full h-full  fixed z-500 font-Roboto text-sm'>
             <div className=' w-600px h-500px   rounded-3xl  '>
-           
                 <div className='h-34 bg-gradient-to-r from-[#F4B106] to-[#F48C06] w-full rounded-t-3xl '></div>
                 <div className='bg-white rounded-b-3xl'>
                     <div className='-translate-y-16  rounded-full bg-white  w-40 h-40 flex justify-center items-center left-0 right-0 mx-auto absolute  '> <img className=' h-28 ' src={logo} alt="logo_basar" /></div>
