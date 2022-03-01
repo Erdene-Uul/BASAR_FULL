@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import notfound from "../../assets/images/pages/notfound.png";
+import blog from "../../assets/images/pages/blog.png";
 class Blog extends Component {
     render() {
         return (
             <div>
-                <img src={notfound} alt="notfound"/>
+                <img src={blog} alt="blog"/>
             </div>
         );
     }
