@@ -12,7 +12,7 @@ const Menu = (props) => {
         <MenuItem link="/news">Мэдээ</MenuItem>
         <MenuItem link="/blog">Блог</MenuItem>
         <MenuItem link="/organizations">Байгууллагууд</MenuItem>
-        <MenuItem link="/services">Үйлчилгэ, Зар</MenuItem>
+        <MenuItem link="/services">Үрчилгээ & Зар</MenuItem>
         <MenuItem link="/first_aid">Анхны тусламж</MenuItem>
       </ul>
     </div>

@@ -4,8 +4,6 @@ import axios from "axios";
 import BigContent from "../../components/BigContent";
 import PostBg from "../../assets/images/niitlel.png";
 import Section2 from "../../components/Section2";
-console.log(process.env)
-
 
 
 class News extends Component {

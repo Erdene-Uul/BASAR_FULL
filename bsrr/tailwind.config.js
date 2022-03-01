@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      zIndex: {
+        '500': '500',
+      },
       backgroundColor: {
         "black-t-50": "rgba(0,0,0,0.5)",
       },
@@ -18,6 +21,8 @@ module.exports = {
         120: "30rem",
         "300px": "324px",
         "100px": "100px",
+        "600px": "600px",
+        "500px": "500px",
         0.1: "1px",
       },
       colors: {

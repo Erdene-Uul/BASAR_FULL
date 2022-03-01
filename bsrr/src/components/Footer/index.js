@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
 
-        <footer className="h-32rem w-full hidden lg:block">
+        <footer className="h-32rem w-full hidden lg:block font-Roboto text-xs">
             <div className="flex justify-center items-center space-x-12 h-32 w-full bg-gradient-to-r from-footerTop1 to-[#FF834F] text-white">
                 <div className="text-xl font-light" >
                     ЦАГ АЛДАЛГҮЙ МЭДЭЭЛЭЛ <span className="font-bold">ХҮЛЭЭЖ АВААРАЙ</span>
@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="h-full lg:wrapper mx-16">
-                <div className="grid grid-cols-6 py-12">
+                <div className="grid grid-cols-6 py-14 text-[#2B363F] ">
                     <div>
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             АНГИЛАЛ
