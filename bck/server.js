@@ -25,7 +25,7 @@ var accessLogStream = rfs.createStream("access.log", {
 });
 
 // Body parser
-app.use(cors());
+app.use(cors({origin: "https://peaceful-engelbart-9c3bb3.netlify.app"}));
 app.use(express.json());
 app.use(fileupload());
 app.use(logger);

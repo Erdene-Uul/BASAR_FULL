@@ -11,6 +11,7 @@ const Section4 = () => {
         </h1>
         <img
           src={Basar_01}
+          alt="basar1"
           className="h-44 md:h-64 xl:h-80 inline-block ml-56 md:ml-80 xl:ml-120 mt-32 xl:mt-20"
         />
       </div>
@@ -20,6 +21,7 @@ const Section4 = () => {
         </h1>
         <img
           src={Basar_02}
+          alt="basar2"
           className="h-44 md:h-64 xl:h-80 inline-block ml-56 md:ml-80 xl:ml-120 mt-32 xl:mt-24 "
         />
       </div>

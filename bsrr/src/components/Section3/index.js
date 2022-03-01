@@ -32,9 +32,7 @@ const Section3 = () => {
           <Link
             to={{ pathname: "https://www.youtube.com/watch?v=D_Rx4qZ8QRc" }}
             target="_blanck"
-            className=" hidden lg:flex justify-center items-center   cursor-pointer
-          "
-            className={css.link}
+            className={`hidden lg:flex justify-center items-center cursor-pointer ${css.link}`} 
           >
             <FontAwesomeIcon
               icon={solid("play")}

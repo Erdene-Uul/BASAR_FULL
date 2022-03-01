@@ -7,6 +7,7 @@ import turtle from "../../assets/images/animals/turtle.png";
 import zaraa from "../../assets/images/animals/zaraa.png";
 import dog from "../../assets/images/animals/dog.png";
 import guinea from "../../assets/images/animals/guinea.png";
+import { Link } from "react-router-dom";
 const Animals = () => {
   return (
     <section className="wrapper my-16 md:my-24 h-52.0625rem ">
@@ -20,14 +21,14 @@ const Animals = () => {
             src={dog}
             alt="dog"
           />
-          <a
-            href=""
+          <Link
+            to="/animals"
             className="bg-gradient-to-b from-DogColor1 to-DogColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
             <h1 className="font-bold md:text-2xl text-indigo-900 absolute mt-12 ml-2">
               Нохой
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className="animals-responsive w-1/2">
@@ -36,14 +37,14 @@ const Animals = () => {
             src={cat}
             alt="cat"
           />
-          <a
-            href=""
+          <Link
+            to="/animals"
             className="bg-gradient-to-b from-CatColor1 to-CatColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
             <h1 className="font-bold md:text-2xl text-indigo-900 absolute mt-12 ml-2">
               Муур
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className="animals-responsive w-1/2">
@@ -52,14 +53,14 @@ const Animals = () => {
             src={rabbit1}
             alt="rabbit"
           />
-          <a
-            href=""
+          <Link
+            to="/animals"
             className="bg-gradient-to-b from-RabbitColor1 to-RabbitColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
             <h1 className="font-bold md:text-2xl text-indigo-900 absolute mt-12 ml-2">
               Туулай
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className="animals-responsive w-1/2">
@@ -68,14 +69,14 @@ const Animals = () => {
             src={bird}
             alt="bird"
           />
-          <a
-            href=""
+          <Link
+            to="/animals"
             className="bg-gradient-to-b from-BirdColor1 to-BirdColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
             <h1 className="font-bold md:text-2xl text-indigo-900 absolute mt-12 ml-2">
               Шувуу
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className="animals-responsive w-1/2">
@@ -84,14 +85,14 @@ const Animals = () => {
             src={turtle}
             alt="turtle"
           />
-          <a
-            href=""
+          <Link
+            to="/animals"
             className="bg-gradient-to-b from-TurtleColor1 to-TurtleColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
             <h1 className="font-bold md:text-2xl text-indigo-900 absolute mt-12 ml-2">
               Яст мэлхий
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className="animals-responsive w-1/2">
@@ -100,14 +101,14 @@ const Animals = () => {
             src={fish}
             alt="fish"
           />
-          <a
-            href=""
+          <Link
+            to="/animals"
             className="bg-gradient-to-b from-FishColor1 to-FishColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
             <h1 className="font-bold text-indigo-900 md:text-2xl absolute mt-12 ml-2">
               Загас
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className="animals-responsive w-1/2">
@@ -116,14 +117,14 @@ const Animals = () => {
             src={zaraa}
             alt="zaraa"
           />
-          <a
-            href=""
+          <Link
+            to="/animals"
             className="bg-gradient-to-b from-HedgehogColor1 to-HedgehogColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
             <h1 className="font-bold md:text-2xl text-indigo-900 absolute mt-12 ml-2">
               Зараа
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className="animals-responsive w-1/2">
@@ -132,14 +133,14 @@ const Animals = () => {
             src={guinea}
             alt="usan gahai"
           />
-          <a
-            href=""
+          <Link
+            to="/animals"
             className="bg-gradient-to-b from-MouseColor to-MouseColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
             <h1 className="font-bold md:text-2xl text-indigo-900 absolute mt-12 ml-2">
               Усан гахай
             </h1>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
