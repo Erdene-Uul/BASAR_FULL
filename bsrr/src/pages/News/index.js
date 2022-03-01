@@ -17,6 +17,7 @@ class News extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0,0);
         axios.get(`${process.env.REACT_APP_API_URL}/api/v1/news`).then(res => {
             this.setState({ news: res.data.data })
         }).finally(() => {

@@ -17,11 +17,12 @@ const Home = () => {
     }
 
     useEffect(() => {
-        if (test === 0){
+        window.scrollTo(0, 0);
+        if (test === 0) {
             setState(true)
             test++
         }
-    },[])
+    }, [])
 
 
     return (
