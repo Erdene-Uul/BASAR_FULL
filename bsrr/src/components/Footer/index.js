@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
 
-        <footer className="h-32rem w-full hidden lg:block">
+        <footer className="h-32rem w-full hidden lg:block font-Roboto text-xs">
             <div className="flex justify-center items-center space-x-12 h-32 w-full bg-gradient-to-r from-footerTop1 to-[#FF834F] text-white">
                 <div className="text-xl font-light" >
                     ЦАГ АЛДАЛГҮЙ МЭДЭЭЛЭЛ <span className="font-bold">ХҮЛЭЭЖ АВААРАЙ</span>
@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="h-full lg:wrapper mx-16">
-                <div className="grid grid-cols-6 py-12">
+                <div className="grid grid-cols-6 py-14 text-[#2B363F] ">
                     <div>
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             АНГИЛАЛ
@@ -187,10 +187,10 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-span-2 border-slate-600 border-l-2 lg:pl-14 pl-8">
+                    <div className="col-span-2 border-slate-400 border-l-2 lg:pl-14 pl-8">
                         <div className="flex items-center">
                             <FontAwesomeIcon icon={solid('headset')} size="3x" />
-                            <p className="text-lg font-medium mx-10 font-Montserrat">77111208</p>
+                            <p className="text-lg font-medium mx-10 font-Montserrat">7211-0737</p>
                             <button className="lg:px-9 py-2 border text-[#9B9B9B] rounded-lg font-Montserrat">Чатлах</button>
                         </div>
                         <div className="mt-12 mb-8">

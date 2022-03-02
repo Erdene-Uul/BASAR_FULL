@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import notfound from "../../assets/images/pages/NotFound.png";
+import NotFound from "../../assets/images/pages/NotFound.png";
 class Blog extends Component {
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
     render() {
         return (
             <div>
-                <img src={notfound} alt="notfound"/>
+                <img src={NotFound} alt="NotFound"/>
             </div>
         );
     }

@@ -6,34 +6,44 @@ import logo_image from "../../assets/images/menu_logo/menu_logo.png";
 import logo_image2 from "../../assets/images/menu_logo/menu_logo_02.png";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Sidebar from "../Sidebar";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
   const showSideMenu = () => {
-    (isSideMenuOpen) ? setisSideMenuOpen(false) : setisSideMenuOpen(true)
-  }
+    isSideMenuOpen ? setisSideMenuOpen(false) : setisSideMenuOpen(true);
+  };
   return (
-
-    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 drop-shadow-xl ">
-      <div className="fixed top-4 left-3"> <button onClick={() => { showSideMenu() }} className="lg:hidden">
-        {(isSideMenuOpen) ? <FontAwesomeIcon
-          icon={faClose}
-        /> : <FontAwesomeIcon
-          icon={faBars}
-        />}
-      </button></div>
-      {(isSideMenuOpen) ? Sidebar() : ''}
+    <nav className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-xl ">
+      <div className="fixed top-3 left-3 z-50">
+        {" "}
+        <button
+          onClick={() => {
+            showSideMenu();
+          }}
+          className="lg:hidden"
+        >
+          {isSideMenuOpen ? (
+            <FontAwesomeIcon icon={faClose} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
+        </button>
+      </div>
+      {isSideMenuOpen ? Sidebar() : ""}
       {/* lg:  */}
       <div className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 ">
         <Link to="/" className="text-2xl flex cursor-pointer">
           <div className="flex shrink-0 ">
-            <img className="h-10" src={logo_image} alt="logo" />
+            <img className="lg:h-10 h-8" src={logo_image} alt="basar logo" />
           </div>
 
           <div className="flex shrink-0">
-            <img className="h-10 pl-2 " src={logo_image2} alt="" />
+            <img
+              className="lg:h-10 pl-2 h-8"
+              src={logo_image2}
+              alt="basar.mn"
+            />
           </div>
         </Link>
       </div>
@@ -41,7 +51,7 @@ const Navbar = (props) => {
       <Menu />
       <ul className="flex items-center justify-end w-full lg:w-2/6  ">
         {/* search input */}
-        <div className="flex">
+        <div className="flex pr-5">
           <input
             className="  outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
             type="search"
@@ -59,7 +69,8 @@ const Navbar = (props) => {
         </div>
 
         {/* button дэлгүүр нэвтрэх */}
-        <Link to='/shop'><button className="bg-blueMain text-white duration-500 hover:bg-sky-700 rounded-3xl text-xs font-Roboto relative mr-4 lg:flex hidden ">
+        <Link to = "/shop">
+        <button className="bg-blueMain text-white duration-500 hover:bg-sky-700 rounded-3xl text-xs font-Roboto relative mr-4 lg:flex hidden ">
           <div className="hidden lg:h-8 lg:w-8 bg-sky-600 lg:flex lg:items-center lg:justify-center rounded-full">
             <FontAwesomeIcon
               icon={solid("cart-shopping")}
@@ -67,21 +78,16 @@ const Navbar = (props) => {
               color="white"
             />
           </div>
-
           <span className=" pr-3 pl-2 mt-2">ДЭЛГҮҮР</span>
         </button>
         </Link>
-
-        <Link to="/login">
-          <button className="bg-btnOrange text-white duration-500 px-4 py-2 mr-4 hover:bg-orange-700 rounded-3xl text-xs font-Roboto lg:flex hidden ">
-            НЭВТРЭХ
-          </button>
+        <Link to = '/login'>
+        <button className="bg-btnOrange text-white duration-500 px-4 py-2 mr-4 hover:bg-orange-700 rounded-3xl text-xs font-Roboto lg:flex hidden ">
+          НЭВТРЭХ
+        </button>
         </Link>
       </ul>
-
-
     </nav>
-
   );
 };
 export default Navbar;

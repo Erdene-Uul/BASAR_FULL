@@ -1,6 +1,10 @@
 import React from "react";
 import PostImgBig from "../../assets/images/niitlel_big.png";
 import PostImgSmall from "../../assets/images/niitlel_small.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { Link } from "react-router-dom";
+import css from "./btn.module.css";
 
 const Section3 = () => {
   return (
@@ -11,20 +15,39 @@ const Section3 = () => {
           easier{" "}
         </div>
 
-        <div className="flex w-full h-96  absolute sm:justify-center sm:items-center sm:-m-20 md:-m-16 lg:-mt-6 ">
-          <button className=" rounded-full py-2 px-4 bg-btnOrange text-white absolute mt-28 sm:mt-0 ml-4 hover:bg-orange-500 transition-all ease-in-out duration-300 ">
+        <div
+          className="flex sm:justify-center sm:items-center w-full h-full  absolute   
+         "
+        >
+          <h1 className=" w-full absolute text-white invisible sm:visible sm:text-xl  md:text-3xl text-center font-medium italic   lg:text-4xl lg:font-bold  sm:mb-40 md:mb-52">
+            #Блог
+          </h1>
+          <h1 className="w-full absolute text-center text-white invisible sm:visible sm:text-2xl sm:mb-28 font-bold  md:text-3xl lg:text-5xl ">
+            Бид Амьтанд Хайртай
+          </h1>
+
+          <button className=" rounded-full py-2 px-4 bg-btnOrange text-white absolute mt-28 sm:mt-0 ml-4 hover:bg-orange-500 transition-all ease-in-out duration-300 sm:mr-52">
             Нийтлэл
           </button>
-          <div className=" sm:flex p-5 rounded-full bg-white absolute hidden sm:visible sm:ml-44 "></div>
-          <div className="sm:flex absolute text-white hidden sm:visible sm:ml-80">Бичлэг үзэх</div>
+          <Link
+            to={{ pathname: "https://www.youtube.com/watch?v=D_Rx4qZ8QRc" }}
+            target="_blanck"
+            className={`hidden lg:flex justify-center items-center cursor-pointer ${css.link}`} 
+          >
+            <FontAwesomeIcon
+              icon={solid("play")}
+              size="1x"
+              className="text-btnOrange hidden sm:flex
+               md:visible"
+            />
+          </Link>
+
+          <div className="sm:flex absolute text-white hidden sm:visible sm:ml-48">
+            Бичлэг үзэх
+          </div>
         </div>
         {/* sm дэлэгцнээс дээш style */}
-        <h1 className=" w-full absolute text-white invisible sm:visible sm:text-xl  md:text-3xl text-center font-medium italic mt-4  lg:text-4xl lg:font-bold lg:mt-10  ">
-          #Блог
-        </h1>
-        <h1 className="w-full absolute text-center text-white invisible sm:visible sm:text-2xl font-bold mt-10  md:text-3xl md:mt-14 lg:mt-20 lg:text-5xl ">
-          Бид Амьтанд Хайртай
-        </h1>
+      
         <img  className="hidden lg:flex lg:visible bg-cover  bg-top bg-fixed"
         alt="postbg"
           src={PostImgBig}
