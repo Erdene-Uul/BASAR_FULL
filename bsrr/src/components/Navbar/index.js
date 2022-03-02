@@ -14,7 +14,7 @@ const Navbar = (props) => {
     isSideMenuOpen ? setisSideMenuOpen(false) : setisSideMenuOpen(true);
   };
   return (
-    <nav className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-xl ">
+    <nav onClick={showSideMenu} className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-xl ">
       <div className="fixed top-3 left-3 z-50">
         {" "}
         <button
