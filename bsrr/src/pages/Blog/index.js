@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import blog from "../../assets/images/pages/blog.png";
+import NotFound from "../../assets/images/pages/NotFound.png";
 class Blog extends Component {
     componentDidMount(){
         window.scrollTo(0,0);
@@ -7,7 +7,7 @@ class Blog extends Component {
     render() {
         return (
             <div>
-                <img src={blog} alt="blog"/>
+                <img src={NotFound} alt="NotFound"/>
             </div>
         );
     }
