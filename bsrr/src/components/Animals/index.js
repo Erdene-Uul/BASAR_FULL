@@ -22,7 +22,7 @@ const Animals = () => {
               src={dog}
               alt="dog"
             />
-            <Link to="/" className="bg-sky-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/animals" className="bg-sky-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Нохой
               </h1>
@@ -36,8 +36,7 @@ const Animals = () => {
               src={cat}
               alt="cat"
             />
-            <Link
-              to="/"
+            <Link to="/animals"
               className="bg-amber-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
             >
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
@@ -53,7 +52,7 @@ const Animals = () => {
               src={rabbit1}
               alt="rabbit"
             />
-            <Link to="/" className="bg-zinc-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/animals" className="bg-zinc-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Туулай
               </h1>
@@ -67,7 +66,7 @@ const Animals = () => {
               src={bird}
               alt="bird"
             />
-            <Link to="/" className="bg-lime-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/animals" className="bg-lime-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Шувуу
               </h1>
@@ -80,7 +79,7 @@ const Animals = () => {
               src={turtle}
               alt="turtle"
             />
-            <Link to="/" className="bg-red-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/animals" className="bg-red-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
                 Яст мэлхий
               </h1>
@@ -93,7 +92,7 @@ const Animals = () => {
               src={fish}
               alt="fish"
             />
-            <Link to="/" className="bg-sky-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
+            <Link to="/animals" className="bg-sky-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl">
               <h1 className="font-bold text-indigo-900 text-2xl absolute mt-12 ml-2">
                 Загас
               </h1>
@@ -106,8 +105,7 @@ const Animals = () => {
               src={zaraa}
               alt="zaraa"
             />
-            <Link
-              to="/"
+            <Link to="/animals"
               className="bg-purple-100 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
             >
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
@@ -123,8 +121,7 @@ const Animals = () => {
               src={guinea}
               alt="usan gahai"
             />
-            <Link
-              to="/"
+            <Link to="/animals"
               className="bg-indigo-200 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
             >
               <h1 className="font-bold text-2xl text-indigo-900 absolute mt-12 ml-2">
