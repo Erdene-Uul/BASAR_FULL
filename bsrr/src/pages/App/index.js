@@ -16,10 +16,11 @@ import Login from "../Login";
 
 
 class App extends Component {
+
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar/>
         <main className="min-h-custom">
           <Switch>
             <Route path="/animals" component={Animals} />
@@ -31,7 +32,7 @@ class App extends Component {
             <Route path="/news_details" component={NewsDetails} />
             <Route path="/shop" component={Shop} />
             <Route path="/login" component={Login} />
-            <Route path="/" component={Home} />
+            <Route path="/" component={Home}/>
           </Switch>
         </main>
         <Footer/>

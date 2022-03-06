@@ -7,8 +7,10 @@ import Section3 from "../../components/Section3";
 import Section4 from "../../components/Section4";
 import Section5 from "../../components/Section5";
 import Popup from "../../components/PopUp";
+import Shadow from "../../components/Shadow";
+
 let test = 0;
-const Home = () => {
+const Home = (props) => {
 
     const [showPopup, setState] = useState(false);
 
@@ -28,6 +30,7 @@ const Home = () => {
     return (
         <div>
 
+            <Shadow isSideMenuOpen={props.isSideMenuOpen} showSideMenu={props.showSideMenu} />
             <Popup closePopup={closePopup} show={showPopup} />
             <Section1 />
             <Section2 />
