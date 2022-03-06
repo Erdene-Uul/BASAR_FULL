@@ -91,7 +91,7 @@ class News extends Component {
 
                     {/*SECTION 3 - Slider*/}
                     <div className="invisible lg:visible">
-                        <Section2 />
+                        <Section2 news = {this.state.news}/>
                     </div>
 
                     {/*SECTION 4*/}
@@ -104,10 +104,8 @@ class News extends Component {
                             <Content key={index} news={el} />
                         ))} </div>
                     </div>
-                </div>)
-    }
-              
-
+                </div>
+                )}
             </div>
         );
     }

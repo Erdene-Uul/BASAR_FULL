@@ -13,6 +13,7 @@ import MFooter from "../../components/MobileFooter";
 import { Route, Switch } from "react-router-dom";
 import Shop from "../OnlineShop";
 import Login from "../Login";
+import FilteredNews from "../FilteredNews";
 
 
 class App extends Component {
@@ -24,7 +25,7 @@ class App extends Component {
         <main className="lg:min-h-custom min-h-full">
           <Switch>
             <Route path="/animals" component={Animals} />
-            <Route path="/news" component={News} />
+            <Route path="/news" component={News}/>
             <Route path="/blog" component={Blog} />
             <Route path="/organizations" component={Organizations} />
             <Route path="/services" component={Services} />
@@ -32,6 +33,7 @@ class App extends Component {
             <Route path="/news_details" component={NewsDetails} />
             <Route path="/shop" component={Shop} />
             <Route path="/login" component={Login} />
+            <Route path="/filtered" component={FilteredNews} />
             <Route path="/" component={Home}/>
           </Switch>
         </main>

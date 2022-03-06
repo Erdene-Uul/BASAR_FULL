@@ -52,11 +52,11 @@ const Navbar = (props) => {
         {/* search input */}
         <div className="flex pr-5">
           <input
-            className="  outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
+            className="focus:border focus:rounded-lg outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
             type="search"
             placeholder="хайх"
           ></input>
-          <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer  mr-3">
+          <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-3">
             <FontAwesomeIcon
               icon={solid("magnifying-glass")}
               size="1x"
