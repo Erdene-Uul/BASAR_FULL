@@ -21,15 +21,14 @@ class Section2 extends React.Component {
   }
 
   render() {
-    if (this.state.loading)
-      return <Spinner />
-    else
-      return (
-        <div className="mt-16 ">
-          <h1 className="italic font-Roboto text-blue-700 font-extrabold ml-36 mt-8 z-50 md:text-2xl">
-            #ОНЦЛОХ БУЛАН
-          </h1>
-          {/* <!-- cover content мэдээ мэдээлэлийн хэсэг --> */}
+    return (
+      <div className="mt-16 ">
+        <h1 className="italic font-Roboto text-blue-700 font-extrabold ml-36 mt-8 z-50 md:text-2xl">
+          #ОНЦЛОХ БУЛАН
+        </h1>
+        {/* <!-- cover content мэдээ мэдээлэлийн хэсэг --> */}
+        {this.state.loading ? <Spinner /> : (
+
           <div className="container mx-auto mt-8">
             {/* mobile */}
             <div className="flex flex-row  visible lg:hidden w-full py-3">
@@ -57,8 +56,10 @@ class Section2 extends React.Component {
               </Carousel>
             </div>
           </div>
-        </div>
-      );
+        )
+        }
+      </div>
+    );
   }
 }
 export default Section2;

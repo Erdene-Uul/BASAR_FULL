@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div>
         <Navbar/>
-        <main className="min-h-custom">
+        <main className="lg:min-h-custom min-h-full">
           <Switch>
             <Route path="/animals" component={Animals} />
             <Route path="/news" component={News} />
