@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import notfound from "../../assets/images/pages/notfound.png";
+import notfound from "../../assets/images/pages/NotFound.png";
 class Login extends Component {
     componentDidMount(){
         window.scrollTo(0,0);

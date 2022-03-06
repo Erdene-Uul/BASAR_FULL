@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NotFound from "../../assets/images/pages/notfound.png";
+import NotFound from "../../assets/images/pages/NotFound.png";
 class Blog extends Component {
     componentDidMount(){
         window.scrollTo(0,0);
