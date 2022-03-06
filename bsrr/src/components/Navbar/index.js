@@ -68,6 +68,7 @@ const Navbar = (props) => {
         </div>
 
         {/* button дэлгүүр нэвтрэх */}
+        <Link to = "/shop">
         <button className="bg-blueMain text-white duration-500 hover:bg-sky-700 rounded-3xl text-xs font-Roboto relative mr-4 lg:flex hidden ">
           <div className="hidden lg:h-8 lg:w-8 bg-sky-600 lg:flex lg:items-center lg:justify-center rounded-full">
             <FontAwesomeIcon
@@ -76,13 +77,14 @@ const Navbar = (props) => {
               color="white"
             />
           </div>
-
           <span className=" pr-3 pl-2 mt-2">ДЭЛГҮҮР</span>
         </button>
-
+        </Link>
+        <Link to = '/login'>
         <button className="bg-btnOrange text-white duration-500 px-4 py-2 mr-4 hover:bg-orange-700 rounded-3xl text-xs font-Roboto lg:flex hidden ">
           НЭВТРЭХ
         </button>
+        </Link>
       </ul>
     </nav>
   );
