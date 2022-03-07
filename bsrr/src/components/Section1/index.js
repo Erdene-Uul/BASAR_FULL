@@ -35,11 +35,12 @@ const Section1 = (props) => {
           <Link to={
             {
               pathname: "/filtered",
-              state: filtered
+              state: props.news,
+              value: filtered
             }
           }>
             <button
-              className="px-6 py-2 ml-64 text-white bg-btnYagaan border-l rounded-full absolute hover:bg-orange-500"
+              className=" px-6 py-2 text-white bg-btnYagaan border-l rounded-full absolute hover:bg-orange-500"
             >
               Хайх
             </button>
