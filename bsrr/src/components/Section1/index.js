@@ -38,9 +38,9 @@ const Section1 = (props) => {
               state: props.news,
               value: filtered
             }
-          }>
+          } className="absolute ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
             <button
-              className=" px-6 py-2 text-white bg-btnYagaan border-l rounded-full absolute hover:bg-orange-500"
+              className=" px-6 py-2 "
             >
               Хайх
             </button>
