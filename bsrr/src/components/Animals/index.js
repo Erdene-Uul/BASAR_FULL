@@ -2,11 +2,11 @@ import React from "react";
 import bird from "../../assets/images/animals/bird.png";
 import cat from "../../assets/images/animals/cat.png";
 import fish from "../../assets/images/animals/fish.png";
-import rabbit1 from "../../assets/images/animals/rabbit1.png";
+import rabbit from "../../assets/images/animals/rabbit.png";
 import turtle from "../../assets/images/animals/turtle.png";
 import zaraa from "../../assets/images/animals/zaraa.png";
 import dog from "../../assets/images/animals/dog.png";
-import guinea from "../../assets/images/animals/guinea.png";
+import humster from "../../assets/images/animals/humster.png";
 import { Link } from "react-router-dom";
 const Animals = () => {
   return (
@@ -17,7 +17,7 @@ const Animals = () => {
       <div className="flex flex-wrap">
         <div className="animals-responsive w-1/2">
           <img
-            className="h-24 ml-20 sm:ml-28 md:h-32  md:ml-52 absolute z-20 flex shrink-0"
+            className="h-20 mt-12 ml-16 sm:ml-40 sm:h-24 sm:mt-8   md:ml-32 xl:h-28 xl:ml-44 xl:mt-4 absolute z-20 flex shrink-0"
             src={dog}
             alt="dog"
           />
@@ -33,7 +33,7 @@ const Animals = () => {
 
         <div className="animals-responsive w-1/2">
           <img
-            className="h-24 ml-8 md:h-32 md:ml-32 absolute z-20"
+            className="h-24 ml-20 mt-8 sm:ml-44  md:ml-36 xl:ml-52 xl:h-28 xl:mt-4 absolute z-20"
             src={cat}
             alt="cat"
           />
@@ -49,8 +49,8 @@ const Animals = () => {
 
         <div className="animals-responsive w-1/2">
           <img
-            className="h-20 ml-14 md:h-32 md:ml-36 absolute z-20"
-            src={rabbit1}
+            className="h-28 ml-20 mt-4 sm:ml-44  md:ml-36 xl:ml-48 xl:h-32 xl:mt-0 absolute z-20"
+            src={rabbit}
             alt="rabbit"
           />
           <Link
@@ -65,7 +65,7 @@ const Animals = () => {
 
         <div className="animals-responsive w-1/2">
           <img
-            className="h-24 ml-12 md:h-32 md:ml-36 absolute z-20"
+            className="h-20 ml-20 mt-12 sm:ml-44 sm:h-24 sm:mt-8  md:ml-36 xl:h-28 xl:mt-4 xl:ml-48 absolute z-20"
             src={bird}
             alt="bird"
           />
@@ -81,7 +81,7 @@ const Animals = () => {
 
         <div className="animals-responsive w-1/2">
           <img
-            className="h-10 sm:h-16 mt-10 sm:mt-10 md:mt-12 ml-16 md:ml-40 absolute z-20"
+            className="h-12  ml-16 mt-8 sm:h-16  sm:mt-7 sm:ml-36  md:ml-28 xl:h-20 xl:ml-36 absolute z-20"
             src={turtle}
             alt="turtle"
           />
@@ -97,7 +97,7 @@ const Animals = () => {
 
         <div className="animals-responsive w-1/2">
           <img
-            className="h-20 ml-16 mt-6 md:h-32 md:ml-44 md:mt-2 absolute z-20"
+            className="h-20 ml-16 mt-6 sm:h-24 sm:ml-44 md:h-28 md:ml-28 md:mt-2 xl:h-32 xl:ml-40 absolute z-20"
             src={fish}
             alt="fish"
           />
@@ -105,7 +105,7 @@ const Animals = () => {
             to="/animals"
             className="bg-gradient-to-b from-FishColor1 to-FishColor2 z-10 w-full mt-8 mb-0 mx-4 rounded-2xl"
           >
-            <h1 className="font-bold text-indigo-900 md:text-2xl absolute mt-12 ml-2">
+            <h1 className="font-bold text-indigo-900 md:text-2xl  absolute mt-12 ml-2">
               Загас
             </h1>
           </Link>
@@ -113,7 +113,7 @@ const Animals = () => {
 
         <div className="animals-responsive w-1/2">
           <img
-            className=" h-20 ml-14 md:h-32 md:ml-36 absolute z-20"
+            className=" h-20  ml-14 sm:h-24 sm:ml-40 md:h-24 md:ml-28  xl:h-28 xl:ml-44 xl:mt-4 absolute z-20"
             src={zaraa}
             alt="zaraa"
           />
@@ -129,8 +129,8 @@ const Animals = () => {
 
         <div className="animals-responsive w-1/2">
           <img
-            className="h-16 ml-16 md:h-28 md:ml-40 mt-4 absolute z-20"
-            src={guinea}
+            className="h-20 ml-16  sm:h-24 sm:ml-44 md:h-24 md:ml-36  xl:h-28 xl:ml-44 xl:mt-4 absolute z-20"
+            src={humster}
             alt="usan gahai"
           />
           <Link
