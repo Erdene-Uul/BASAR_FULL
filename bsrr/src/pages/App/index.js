@@ -15,6 +15,7 @@ import Shop from "../OnlineShop";
 import Login from "../Login";
 import FilteredNews from "../FilteredNews";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import ScrollToTop from "../../components/ScrollToTop";
 
 class App extends Component {
 
@@ -42,6 +43,7 @@ class App extends Component {
           appId="381346643442500"
           
         />
+        <ScrollToTop />
         <Footer />
         <MFooter />
       </div>
