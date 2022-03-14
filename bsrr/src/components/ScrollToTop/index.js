@@ -30,7 +30,7 @@ export default function ScrollToTop() {
   return (
     <div className="scroll-to-top">
       {isVisible && 
-        <div className="w-16 h-16 items-center justify-center flex transform hover:scale-105 transition-all duration-500 ease-in-out bg-white rounded-full" onClick={scrollToTop}>
+        <div className="w-14 h-14 items-center justify-center flex transform hover:scale-105 transition-all duration-500 ease-in-out bg-white rounded-full" onClick={scrollToTop}>
           <img src={scroll} alt='Go to top'/>
         </div>}
     </div>
