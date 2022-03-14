@@ -50,12 +50,12 @@ const Navbar = (props) => {
       </div>
 
       <Menu />
-      <ul className="flex items-center justify-end w-full lg:w-2/6  ">
+      <div className="flex items-center justify-end w-full lg:w-2/6 z-10 ">
         {/* search input */}
-        <div className="flex pr-5">
+        <div className="flex lg:pr-5 ">
           <input
             onChange={onChange}
-            className="focus:border focus:rounded-lg outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
+            className=" focus:border w-24 lg:w-auto focus:rounded-lg outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
             type="search"
             placeholder="хайх"
           ></input>
@@ -64,14 +64,14 @@ const Navbar = (props) => {
             pathname:'/filtered',
             state:search
           }}>
-            <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-3">
+            <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-1 lg:ml-3">
               <FontAwesomeIcon
                 icon={solid("magnifying-glass")}
                 size="1x"
                 color="#71717A"
               />
             </button>
-          </Link>:<button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-3">
+          </Link>:<button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-1 lg:ml-3">
               <FontAwesomeIcon
                 icon={solid("magnifying-glass")}
                 size="1x"
@@ -101,7 +101,7 @@ const Navbar = (props) => {
             НЭВТРЭХ
           </button>
         </Link>
-      </ul>
+      </div>
     </nav>
   );
 };
