@@ -12,17 +12,17 @@ const Section4 = () => {
         <img
           src={Basar_01}
           alt="basar1"
-          className="h-44 md:h-64 xl:h-80 inline-block ml-56 md:ml-80 xl:ml-120 mt-32 xl:mt-20"
+          className="h-44 md:h-64 xl:h-80 inline-block ml-56 md:ml-80 2xl:ml-120 mt-32 xl:mt-20"
         />
       </div>
-      <div className=" w-full lg:w-1/2 md:h-96 bg-gradient-to-r from-ZarGreen1 to-ZarGreen2 relative">
+      <div className=" w-full lg:w-1/2 md:h-96 bg-gradient-to-r from-ZarGreen1 to-ZarGreen2 relative overflow-hidden">
         <h1 className=" text-3xl lg:text-6xl text-BigTextColor absolute font-medium w-44 ml-24 mt-12">
           ОНЛАЙН ХУДАЛДАА
         </h1>
         <img
           src={Basar_02}
           alt="basar2"
-          className="h-44 md:h-64 xl:h-80 inline-block ml-56 md:ml-80 xl:ml-120 mt-32 xl:mt-24 "
+          className="h-44 md:h-64 xl:h-80 inline-block ml-56 md:ml-80  2xl:ml-120 mt-32 xl:mt-24  "
         />
       </div>
     </div>
