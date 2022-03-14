@@ -23,11 +23,11 @@ class BigContent extends React.Component {
             </button>
           </div>
 
-          <div className="w-96 mt-24">
+          <div className="w-112 mt-24">
             <h2 className="text-[#252641] font-bold leading-7">
               {this.props.news.title}
             </h2>
-            <p className="text-[#696984]  text-sm mt-3">
+            <p className="text-[#696984] w-112 text-sm mt-3">
               {this.props.news.description}
             </p>
             <p className="text-[#696984] underline hover:underline-offset-4 text-sm mt-3">
