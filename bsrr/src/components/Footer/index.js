@@ -137,7 +137,7 @@ const Footer = () => {
                                 <Link to="/"> Яс хугарах</Link>
                             </li>
                             <li>
-                                <Link to="/"> Гахах</Link>
+                                <Link to="/"> Хахах</Link>
                             </li>
                             <li>
                                 <Link to="/"> Ухаан алдах</Link>
