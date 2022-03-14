@@ -5,9 +5,9 @@ import Commercial from "../Commercial/commercial";
 class NewsDetails extends React.Component {
 
     news = this.props.location.state.news;
-
-
-
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
     render() {
         return (
             <div className="flex  font-Nunito-Sans">
