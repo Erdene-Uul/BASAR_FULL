@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import cover_logo from '../../assets/images/menu_logo/cover_logo.png';
 import { Link } from "react-router-dom";
 
