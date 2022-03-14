@@ -8,7 +8,7 @@ const FilteredNews = (props) => {
         window.scrollTo(0, 0);
     }, [])
 
-    const filtered = props.news.filter(el => el.title.toLowerCase().includes(props.location.state))
+    const filtered = props.news.filter(el => el.title.toLowerCase().includes(props.location.state.toLowerCase()))
 
     return (
         <div className='m-20 flex flex-col justify-center items-center space-y-10'>

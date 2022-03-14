@@ -281,3 +281,4 @@
 ::ffff:192.168.1.7 - - [08/Mar/2022:10:22:25 +0000] "GET /board.cgi?cmd=ls%20..%2F..%2F..%2F HTTP/1.1" 404 148 "-" "Avast Antivirus"
 ::ffff:192.168.1.7 - - [08/Mar/2022:10:22:25 +0000] "GET /board.cgi?cmd=cat%20%2Fetc%2Fpasswd HTTP/1.1" 404 148 "-" "Avast Antivirus"
 >>>>>>> 9c3b16826709607118dbdca963874dfe0728a57c
+::1 - - [14/Mar/2022:09:38:18 +0000] "GET /api/v1/news HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36"
