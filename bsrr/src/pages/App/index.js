@@ -17,6 +17,7 @@ import axios from 'axios';
 import FilteredNews from "../FilteredNews";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import ScrollToTop from "../../components/ScrollToTop";
+import About from "../About"
 
 
 let test = 0;
@@ -65,6 +66,7 @@ class App extends Component {
             <Route path="/news_details" component={NewsDetails} />
             <Route path="/shop" component={Shop} />
             <Route path="/login" component={Login} />
+            <Route path="/about" component={About} />
             <Route path="/filtered" component={() => <FilteredNews news={this.state.news} />} />
             <Route path="/" component={() => <Home loading={this.state.loading} closePopup={this.closePopup} news={this.state.news} showPopup={this.state.showPopup} handlePopup={this.handlePopup} />} />
           </Switch>

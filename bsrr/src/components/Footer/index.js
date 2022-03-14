@@ -18,7 +18,7 @@ const Footer = () => {
                     <button className="bg-white rounded-full text-black h-12 w-28">Хайх</button>
                 </div>
             </div>
-            <div className="h-full lg:wrapper mx-16">
+            <div className="h-full lg:wrapper mx-auto w-4/5 flex justify-center items-center">
                 <div className="grid grid-cols-6 py-14 text-[#2B363F] ">
                     <div>
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
@@ -198,21 +198,21 @@ const Footer = () => {
                                 <li>
                                     <Link to="/">
                                         <div className="p-3 rounded-lg">
-                                            <FontAwesomeIcon icon={brands('Facebook')} size="3x" />
+                                            <FontAwesomeIcon icon={brands('Facebook')} size="3x" className="hover:text-[#3b5998]" />
                                         </div>
                                     </Link>
                                 </li>
 
                                 <li>
                                     <div className="p-3 rounded-lg">
-                                        <FontAwesomeIcon icon={brands('Instagram')} size="3x" />
+                                        <FontAwesomeIcon icon={brands('Instagram')} size="3x" className="hover:text-[#bc2a8d]" />
                                     </div>
                                 </li>
 
                                 <li>
                                     <Link to="/">
                                         <div className="p-3 rounded-lg">
-                                            <FontAwesomeIcon icon={brands('Twitter')} size="3x" />
+                                            <FontAwesomeIcon icon={brands('Twitter')} size="3x" className="hover:text-[#00acee]" />
                                         </div>
 
                                     </Link>
@@ -221,7 +221,7 @@ const Footer = () => {
                                 <li>
                                     <Link to="/">
                                         <div className="p-3 rounded-lg">
-                                            <FontAwesomeIcon icon={brands('Youtube')} size="3x" />
+                                            <FontAwesomeIcon icon={brands('Youtube')} size="3x" className="hover:text-[#FF0000]" />
                                         </div>
 
                                     </Link>
@@ -241,7 +241,7 @@ const Footer = () => {
                     <p>All reserved by @basarmn</p>
                     <ul className="flex">
                         <li className="mx-6 my-2">
-                            <Link to="/" className="hover:text-slate-800 duration-400"
+                            <Link to="/about" className="hover:text-slate-800 duration-400"
                             >БИДНИЙ ТУХАЙ</ Link>
                         </li>
                         <li className="mx-6 my-2">

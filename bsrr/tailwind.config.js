@@ -14,6 +14,7 @@ module.exports = {
         Roboto: ["Roboto"],
         "Nunito-Sans": ["Nunito Sans"],
         Montserrat: ["Montserrat"],
+        Poppins: ["Poppins"],
       },
       spacing: {
         34: "136px",
