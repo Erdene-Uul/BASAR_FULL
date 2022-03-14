@@ -74,11 +74,11 @@ class App extends Component {
             <Route path="/" component={() => <Home loading={this.state.loading} closePopup={this.closePopup} news={this.state.news} showPopup={this.state.showPopup} handlePopup={this.handlePopup} />} />
           </Switch>
         </main>
-        {/* <MessengerCustomerChat
+        <MessengerCustomerChat
           pageId="110141001402215"
           appId="381346643442500"
           
-        /> */}
+        />
         <ScrollToTop />
         <Footer />
         <MFooter />
