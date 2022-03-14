@@ -196,7 +196,8 @@ const Footer = () => {
                         <div className="mt-12 mb-8">
                             <ul className="flex justify-around">
                                 <li>
-                                    <Link to="/">
+                                    <Link  to={{ pathname: "https://www.facebook.com/Basarmn-110141001402215/" }}
+                                                 target="_blanck">
                                         <div className="p-3 rounded-lg">
                                             <FontAwesomeIcon icon={brands('Facebook')} size="3x" className="hover:text-[#3b5998]" />
                                         </div>

@@ -11,7 +11,7 @@ const Card = (props) => {
         }}
         className="relative transform hover:scale-105 transition-all duration-500 ease-in-out"
       >
-        <button className="absolute z-10 ml-4 px-2  py-1 bg-btnSmColor rounded-full mt-36">
+        <button className="absolute z-10 ml-3 px-2 text-sm md:text-base py-1 bg-btnSmColor rounded-full md:mt-36 mt-[152px]">
           {props.news.categoryName}
         </button>
         <img
