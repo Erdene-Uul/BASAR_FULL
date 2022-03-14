@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import Menu from "../Menu";
 import logo_image from "../../assets/images/menu_logo/menu_logo.png";
 import logo_image2 from "../../assets/images/menu_logo/menu_logo_02.png";
@@ -15,35 +15,31 @@ const Navbar = (props) => {
     setSearch(e.target.value)
   }
 
-  const [isSideMenuOpen, setisSideMenuOpen] = useState(false)
-  const showSideMenu = () => {
-    isSideMenuOpen ? setisSideMenuOpen(false) : setisSideMenuOpen(true);
-  };
   return (
-    <nav onClick={showSideMenu} className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-xl ">
+    <nav className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-xl ">
       <div className="fixed top-3 left-3 z-50">
         {" "}
         <button
-          onClick={showSideMenu}
+          onClick={props.toggleSideBar}
           className="lg:hidden"
         >
-          {isSideMenuOpen ? (
-            <FontAwesomeIcon icon={faClose} />
+          {props.showSideBar ? (
+            <FontAwesomeIcon icon={faAngleLeft} />
           ) : (
             <FontAwesomeIcon icon={faBars} />
           )}
         </button>
       </div>
-      {isSideMenuOpen ? <Sidebar isSideMenuOpen={isSideMenuOpen} showSideMenu={showSideMenu} /> : ""}
+      {props.showSideBar ? <Sidebar showSideBar={props.showSideBar} toggleSideBar={props.toggleSideBar}/> : null}
       {/* lg:  */}
       <div
         className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 " >
         <Link to="/" className="text-2xl flex cursor-pointer">
-          <div className="flex shrink-0 ">
+          <div className="flex shrink-0 z-10">
             <img className="lg:h-10 h-8" src={logo_image} alt="basar logo" />
           </div>
 
-          <div className="flex shrink-0">
+          <div className="flex shrink-0 z-10">
             <img
               className="lg:h-10 pl-2 h-8"
               src={logo_image2}
@@ -54,12 +50,12 @@ const Navbar = (props) => {
       </div>
 
       <Menu />
-      <ul className="flex items-center justify-end w-full lg:w-2/6  ">
+      <div className="flex items-center justify-end w-full lg:w-2/6 z-10 ">
         {/* search input */}
-        <div className="flex pr-5">
+        <div className="flex lg:pr-5 ">
           <input
             onChange={onChange}
-            className="focus:border focus:rounded-lg outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
+            className=" focus:border w-24 lg:w-auto focus:rounded-lg outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
             type="search"
             placeholder="хайх"
           ></input>
@@ -68,14 +64,14 @@ const Navbar = (props) => {
             pathname:'/filtered',
             state:search
           }}>
-            <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-3">
+            <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-1 lg:ml-3">
               <FontAwesomeIcon
                 icon={solid("magnifying-glass")}
                 size="1x"
                 color="#71717A"
               />
             </button>
-          </Link>:<button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-3">
+          </Link>:<button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer mr-3 ml-1 lg:ml-3">
               <FontAwesomeIcon
                 icon={solid("magnifying-glass")}
                 size="1x"
@@ -105,7 +101,7 @@ const Navbar = (props) => {
             НЭВТРЭХ
           </button>
         </Link>
-      </ul>
+      </div>
     </nav>
   );
 };

@@ -27,9 +27,14 @@ class App extends Component {
   state = {
     news: [],
     showPopup: false,
-    loading: true
+    loading: true,
+    showSideBar: false
   };
-
+  toggleSideBar = () => {
+    this.setState(prevState => {
+      return { showSideBar: !prevState.showSideBar }
+    });
+  }
   closePopup = () => {
     this.setState({ showPopup: false });
   }
@@ -54,7 +59,7 @@ class App extends Component {
 
     return (
       <div>
-        <Navbar news={this.state.news} />
+        <Navbar news={this.state.news} showSideBar={this.state.showSideBar} toggleSideBar={this.toggleSideBar} />
         <main className="lg:min-h-custom min-h-full">
           <Switch>
             <Route path="/animals" component={Animals} />
@@ -71,7 +76,7 @@ class App extends Component {
             <Route path="/" component={() => <Home loading={this.state.loading} closePopup={this.closePopup} news={this.state.news} showPopup={this.state.showPopup} handlePopup={this.handlePopup} />} />
           </Switch>
         </main>
-         <MessengerCustomerChat
+        <MessengerCustomerChat
           pageId="110141001402215"
           appId="381346643442500"
           
