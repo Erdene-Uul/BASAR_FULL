@@ -2,13 +2,16 @@ import React from "react";
 import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 import Commercial from "../Commercial/commercial";
 
+
 class NewsDetails extends React.Component {
 
     news = this.props.location.state.news;
+    content1 = nl2br(this.news.content.content1);
     componentDidMount(){
         window.scrollTo(0,0);
     }
     render() {
+        console.log(`this.news.content.content1`)
         return (
             <div className="flex  font-Nunito-Sans">
                 <section className="mt-36 flex justify-center items-center flex-col space-y-36 wrapper w-3/5 ">
@@ -27,7 +30,7 @@ class NewsDetails extends React.Component {
                             <div className="ml-10 border-l border-[#B8B8B9] text-xs px-6 flex justify-center items-center font-[#B9BABA]">{this.news.createdAt.substring(0, 10)}</div>
                         </div>
                         <div className="text-[#464C53]">
-                            <div className="whitespace-pre-wrap">  {this.news.content.content1}</div>
+                            <div className="whitespace-pre-wrap">{this.content1}</div>
                             <div className="w-112">
                                 <img className="h-80 my-6 border" alt="news" src={this.news.photo} />
                             </div>
