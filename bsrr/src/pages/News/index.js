@@ -37,7 +37,7 @@ class News extends Component {
 
     render() {
         return (
-            <div className="flex flex-col  mt-32 lg:wrapper md:tab-wrapper m-wrapper box-border">
+            <div className="flex flex-col  mt-32 lg:wrapper md:tab-wrapper m-wrapper box-border " >
                 {/*TITLE*/}
                 <div className="text-[#2F327D] md:text-3xl text-2xl font-bold text-center font-Nunito-Sans">
                     МЭДЭЭ МЭДЭЭЛЭЛ

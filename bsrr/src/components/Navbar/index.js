@@ -33,7 +33,7 @@ const Navbar = (props) => {
       {props.showSideBar ? <Sidebar showSideBar={props.showSideBar} toggleSideBar={props.toggleSideBar}/> : null}
       {/* lg:  */}
       <div
-        className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 " >
+        className="flex pb-3 justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 " >
         <Link to="/" className="text-2xl flex cursor-pointer">
           <div className="flex shrink-0 z-10">
             <img className="lg:h-10 h-8" src={logo_image} alt="basar logo" />
@@ -55,7 +55,7 @@ const Navbar = (props) => {
         <div className="flex lg:pr-5 ">
           <input
             onChange={onChange}
-            className=" focus:border w-24 lg:w-auto focus:rounded-lg outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
+            className=" focus:border w-[88px] lg:w-auto focus:rounded-lg outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
             type="search"
             placeholder="хайх"
           ></input>
@@ -80,7 +80,7 @@ const Navbar = (props) => {
             </button>
          }
 
-          <div className="hidden lg:flex lg:visible lg:w-0.1  lg:h-6 bg-gray-200  mr-10"></div>
+          <div className="hidden lg:flex lg:visible lg:w-0.1  lg:h-6 bg-gray-200  2xl:mr-10"></div>
         </div>
 
         {/* button дэлгүүр нэвтрэх */}

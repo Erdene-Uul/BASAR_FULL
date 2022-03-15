@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+
 import MenuItem from "../MenuItem";
 import Shadow from "../Shadow";
 import logo_image from "../../assets/images/menu_logo/menu_logo.png";
