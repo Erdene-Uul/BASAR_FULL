@@ -9,7 +9,7 @@ class Section2 extends React.Component {
   render() {
     return (
       <div className="mt-16 ">
-        <h1 className="italic font-Roboto text-blue-700 font-extrabold ml-36 mt-8 z-50 md:text-2xl">
+        <h1 className="italic font-Roboto text-blue-700 font-extrabold text-center mt-8 z-50 md:text-2xl">
           #ОНЦЛОХ БУЛАН
         </h1>
         {/* <!-- cover content мэдээ мэдээлэлийн хэсэг --> */}

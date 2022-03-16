@@ -38,13 +38,13 @@ const Section1 = () => {
             }
               className="absolute ml-48 md:ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
               <button
-                className=" px-6 py-2 "
+                className=" md:px-6 md:py-2  py-[6px] px-4"
               >
                 Хайх
               </button>
             </Link>:<div className="absolute ml-48 md:ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
             <button
-              className=" px-6 py-2 "
+              className=" md:px-6 md:py-2  py-[6px] px-4  "
             >
               Хайх
             </button>

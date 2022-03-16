@@ -1,7 +1,7 @@
 .scroll-to-top {
   position: fixed;
   bottom: 6rem;
-  right: 29px;
+  right: 28px;
   z-index: 20;
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;

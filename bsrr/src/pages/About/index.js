@@ -43,7 +43,7 @@ export default function About() {
            <h1 className=' text-white text-3xl font-semibold w-80 text-center'>Амьтдыг хамгаалах сан гэж юу вэ?</h1>
             <button className='ml-20 mt-4 text-white border rounded-3xl border-white px-7 py-2'>Дэлгэрэнгүй</button>
            </div>
-            <img className="bg-blend-darken"
+            <img className=""
               alt="dog1"
               src={dog1}
             />
