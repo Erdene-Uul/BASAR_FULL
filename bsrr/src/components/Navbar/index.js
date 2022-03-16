@@ -16,7 +16,7 @@ const Navbar = (props) => {
   }
 
   return (
-    <nav className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-xl ">
+    <nav className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-xl justify-between ">
       <div className="fixed top-3 left-3 z-50">
         {" "}
         <button
@@ -33,7 +33,7 @@ const Navbar = (props) => {
       {props.showSideBar ? <Sidebar showSideBar={props.showSideBar} toggleSideBar={props.toggleSideBar}/> : null}
       {/* lg:  */}
       <div
-        className="flex pb-3 justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 " >
+        className="flex pb-1 justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 " >
         <Link to="/" className="text-2xl flex cursor-pointer">
           <div className="flex shrink-0 z-10">
             <img className="lg:h-10 h-8" src={logo_image} alt="basar logo" />

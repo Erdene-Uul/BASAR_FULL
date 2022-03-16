@@ -14,13 +14,13 @@ const Footer = () => {
                     ЦАГ АЛДАЛГҮЙ МЭДЭЭЛЭЛ <span className="font-bold">ХҮЛЭЭЖ АВААРАЙ</span>
                 </div>
                 <div className="flex justify-between border border-l-bgServiceColor h-12 w-112 rounded-full">
-                    <span className="flex justify-start items-center ml-6" >Мэйл хаяг</span>
+                    <span className="flex justify-start items-center ml-8" >Мэйл хаяг</span>
                     <button className="bg-white rounded-full text-black h-12 w-28">Хайх</button>
                 </div>
             </div>
-            <div className="h-full lg:wrapper mx-auto w-4/5 flex justify-center items-center">
-                <div className="grid grid-cols-6 py-14 text-[#2B363F] ">
-                    <div>
+            <div className="h-full p-8 mx-auto max-w-7xl flex justify-center items-center">
+                <div className="grid grid-cols-6  py-6 text-[#2B363F] ">
+                    <div className="w-52">
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             АНГИЛАЛ
                         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="w-52">
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             МЭДЭЭ
                         </div>
@@ -99,7 +99,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="w-52">
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             ҮЙЛЧИЛГЭЭ
                         </div>
@@ -156,7 +156,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="w-52">
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             ОНЛАЙН ДЭЛГҮҮР
                         </div>
@@ -187,18 +187,18 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-span-2 border-slate-400 border-l-2 lg:pl-14 pl-8">
-                        <div className="flex items-center">
+                    <div className="col-span-2 border-slate-400 border-l-2 xl:pl-14 pl-8  w-[330px]">
+                        <div className="flex items-center justify-between">
                             <FontAwesomeIcon icon={solid('headset')} size="3x" />
-                            <p className="text-lg font-medium mx-10 font-Montserrat">7211-0737</p>
+                            <p className="text-lg font-medium mx-4 font-Montserrat">7211-0737</p>
                             <button className="lg:px-9 py-2 border text-[#9B9B9B] rounded-lg font-Montserrat">Чатлах</button>
                         </div>
                         <div className="mt-12 mb-8">
-                            <ul className="flex justify-around">
+                            <ul className="flex justify-between">
                                 <li>
                                     <Link  to={{ pathname: "https://www.facebook.com/Basarmn-110141001402215/" }}
                                                  target="_blanck">
-                                        <div className="p-3 rounded-lg">
+                                        <div className="py-3 rounded-lg">
                                             <FontAwesomeIcon icon={brands('Facebook')} size="3x" className="hover:text-[#3b5998]" />
                                         </div>
                                     </Link>
@@ -221,7 +221,7 @@ const Footer = () => {
 
                                 <li>
                                     <Link to="/">
-                                        <div className="p-3 rounded-lg">
+                                        <div className="py-3 rounded-lg">
                                             <FontAwesomeIcon icon={brands('Youtube')} size="3x" className="hover:text-[#FF0000]" />
                                         </div>
 
@@ -229,7 +229,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="flex justify-around">
+                        <div className="flex justify-between">
                             <img className="h-10" src={playStore} alt="playstore" />
                             <img className="h-10" src={appStore} alt="appstore" />
                         </div>
@@ -237,8 +237,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="h-11 w-full bg-slate-600 text-white text-sm  ">
-                <div className="flex items-center justify-between wrapper py-1">
+            <div className="h-11 w-full bg-[#657C93] text-white text-[12px]  ">
+                <div className="flex max-w-7xl items-center justify-between mx-auto py-1 p-4">
                     <p>All reserved by @basarmn</p>
                     <ul className="flex">
                         <li className="mx-6 my-2">
@@ -253,7 +253,7 @@ const Footer = () => {
                             <Link to="/" className="hover:text-slate-800 duration-400"
                             >ХАМТРАН АЖИЛЛАХ</ Link >
                         </li>
-                        <li className="mx-6 my-2">
+                        <li className="ml-8 my-2">
                             <Link to="/" className="hover:text-slate-800 duration-400"
                             >ХОЛБОО БАРИХ</Link>
                         </li>

@@ -8,11 +8,10 @@ import css from "./btn.module.css";
 
 const Section3 = () => {
   return (
-    <section className=" w-full">
+    <section className=" w-full font-Roboto">
       <div className=" relative ">
-        <div className=" absolute w-44 text-white font-bold text-xl mt-10 ml-4 sm:hidden">
-          <span className="text-orange-500">Studying </span>Online is now much
-          easier{" "}
+        <div className=" absolute w-44 text-white font-bold text-xl mt-8 ml-4 sm:hidden">
+        Бид амьтанд хайртай{" "}
         </div>
 
         <div
@@ -26,7 +25,7 @@ const Section3 = () => {
             Бид Амьтанд Хайртай
           </h1>
 
-          <button className=" rounded-full py-2 px-4 bg-btnOrange text-white absolute mt-28 sm:mt-0 ml-4 hover:bg-orange-500 transition-all ease-in-out duration-300 sm:mr-52">
+          <button className=" rounded-full md:py-2 md:px-4 px-2 py-1 text-sm md:text-base bg-btnOrange text-white absolute mt-28 sm:mt-0 ml-4 hover:bg-orange-500 transition-all ease-in-out duration-300 sm:mr-52">
             Нийтлэл
           </button>
           <Link

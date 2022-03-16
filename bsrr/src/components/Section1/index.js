@@ -27,7 +27,7 @@ const Section1 = () => {
           <input
             onChange={onChange}
             type="text"
-            className="px-4 py-2 w-80 rounded-full relative focus:outline-none"
+            className="px-4 py-2 md:w-80 w-64 rounded-full relative text-sm md:text-base  focus:outline-none"
             placeholder="Хайх утгаа оруулна уу"
           />{search ?
             <Link to={
@@ -36,13 +36,13 @@ const Section1 = () => {
                 state: search
               }
             }
-              className="absolute ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
+              className="absolute ml-48 md:ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
               <button
                 className=" px-6 py-2 "
               >
                 Хайх
               </button>
-            </Link>:<div className="absolute ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
+            </Link>:<div className="absolute ml-48 md:ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
             <button
               className=" px-6 py-2 "
             >

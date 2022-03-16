@@ -6,22 +6,22 @@ import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { Link } from "react-router-dom";
 const MFooter = () => {
     return (
-        <footer className="h-43 w-full  lg:hidden">
-          <div className="px-4 flex justify-center box-border items-center h-24 w-full bg-gradient-to-r from-footerTop1 to-[#FF834F] text-white">
-            <div className="text-xs font-light mr-2">
-              ЦАГ АЛДАЛГҮЙ МЭДЭЭЛЭЛ{" "}
-              <span className="font-bold">ХҮЛЭЭЖ АВААРАЙ</span>
+        <footer className="md:h-43 w-full font-Roboto lg:hidden">
+          <div className="px-4 flex justify-center box-border items-center sm:h-24 h-20 w-full bg-gradient-to-r from-footerTop1 to-[#FF834F] text-white">
+            <div className="text-[10px] font-light mr-2 ">
+              ЦАГ АЛДАЛГҮЙ МЭДЭЭЛЭЛ 
+              <span className="font-bold"> ХҮЛЭЭЖ АВААРАЙ</span>
             </div>
             <div className="flex justify-between border border-l-bgServiceColor h-9 w-80 rounded-full">
-              <span className="flex justify-start text-sm items-center leading-4 ml-2">
+              <span className="flex justify-start text-[10px] items-center leading-4 ml-2">
                 Мэйл хаяг
               </span>
-              <button className="bg-white rounded-full text-black h-auto w-24 text-sm font-bold">
+              <button className="bg-white rounded-full text-black h-auto md:w-24 w-16 text-[10px] font-bold">
                 Илгээх
               </button>
             </div>
           </div>
-          <div className="h-full m-12">
+          <div className="h-full m-12 max-w-md mx-auto">
             <div className="">
               <div className="flex items-center justify-around">
                 <FontAwesomeIcon icon={solid("headset")} size="2x" />
@@ -76,16 +76,16 @@ const MFooter = () => {
             </div>
 
 
-            <div className="h-9 w-full bg-slate-600 text-white text-xs  ">
+            <div className="h-7 sm:h-9 sm:text-xs w-full bg-[#657C93] text-white text-[9px]  ">
                 <div className="flex items-center justify-around  ">
                     <p>All reserved by @basarmn</p>
-                    <ul className="flex space-x-5">
+                    <ul className="flex justify-between items-center my-2">
 
-                        <li className=" my-2">
+                        <li className=" ">
                             <Link to="/" className="hover:text-slate-800 duration-400"
                             >Хамтран ажиллах</Link >
                         </li>
-                        <li className="my-2">
+                        <li className=" ml-5">
                             <Link to="/" className="hover:text-slate-800 duration-400"
                             >Холбоо барих</Link>
                         </li>

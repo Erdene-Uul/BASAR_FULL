@@ -41,7 +41,7 @@ const Sidebar = (props) => {
         </ul>
         <div className="mx-auto border-b-2 w-4/5 h-4 border-[#DBDBDB]"></div>
         <ul className="mx-4 my-4 space-y-4 text-sm">
-          <li> <Link to="/">Бидний тухай</Link> </li>
+          <li> <Link to="/about">Бидний тухай</Link> </li>
           <li> <Link to="/">Donate & Volenteer</Link></li>
           <li> <Link to="/"> Хамтран ажиллах </Link> </li>
           <li> <Link to="/">Холбоо барих</Link> </li>

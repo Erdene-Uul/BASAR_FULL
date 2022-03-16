@@ -6,7 +6,7 @@ import Commercial from "../Commercial/commercial";
 class NewsDetails extends React.Component {
 
     news = this.props.location.state.news;
-    content1 = nl2br(this.news.content.content1);
+   
     componentDidMount(){
         window.scrollTo(0,0);
     }
