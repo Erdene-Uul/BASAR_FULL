@@ -19,13 +19,13 @@ const NewsSchema = new mongoose.Schema(
     content: {
       content1: {
         type: String,
-        trim: false,
+        trim: true,
         required: [true, "Мэдээгээ оруулна уу"],
         maxlength: [5000, "Мэдээний урт дээд тал нь 5000 тэмдэгт байх ёстой."],
       },
       content2: {
         type: String,
-        trim: false,
+        trim: true,
         required: [true, "Мэдээгээ оруулна уу"],
         maxlength: [5000, "Мэдээний урт дээд тал нь 5000 тэмдэгт байх ёстой."],
       }

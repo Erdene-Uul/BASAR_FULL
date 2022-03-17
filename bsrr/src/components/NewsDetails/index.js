@@ -1,12 +1,14 @@
 import React from "react";
 import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 import Commercial from "../Commercial/commercial";
+import nl2br from "react-nl2br";
 
 
 class NewsDetails extends React.Component {
 
     news = this.props.location.state.news;
-   
+    data = this.news.content.content1.replace(/lnbr/g, "\n\n");
+    data2 = this.news.content.content2.replace(/lnbr/g, "\n\n");
     componentDidMount(){
         window.scrollTo(0,0);
     }
@@ -30,12 +32,12 @@ class NewsDetails extends React.Component {
                             <div className="md:ml-10 ml-3 border-l border-[#B8B8B9] text-xs md:px-6 px-2 flex justify-center items-center font-[#B9BABA]">{this.news.createdAt.substring(0, 10)}</div>
                         </div>
                         <div className="text-[#464C53]">
-                            <div className="whitespace-pre-wrap xl:leading-7 leading-6 md:text-base text-sm">  {this.news.content.content1}</div>
+                            <div className="whitespace-pre-wrap xl:leading-7 leading-6 md:text-base text-sm">  {nl2br(this.data)}</div>
                             <div className="">
                                 <img className="xl:h-96 xl:my-6 h-auto my-3 border" alt="news" src={this.news.photo} />
                             </div>
                             <div className="whitespace-pre-wrap xl:leading-7 leading-6 md:text-base text-sm">
-                                {this.news.content.content2}
+                                {nl2br(this.data2)}
                             </div>
                         </div>
                     </div>
