@@ -15,7 +15,7 @@ export default class Commercial extends Component {
     render() {
         return (
             <div className='  space-y-6'>{this.state.commercials.map((el, index) => {
-                return <div className='w-96' key={index}><img className='rounded-3xl h-80 w-80' src={el.photo} alt='commercial' /></div>
+                return <div className=' w-80' key={index}><img className='rounded-3xl xl:w-80 xl:h-80 w-72 h-72' src={el.photo} alt='commercial' /></div>
             })}
             </div>
         )

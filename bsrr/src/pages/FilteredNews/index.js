@@ -1,19 +1,26 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import Content from '../../components/content';
+import { withRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
-export default class FilteredNews extends Component {
+const FilteredNews = (props) => {
 
-    render() {
-        return (
-            <div className='m-20 flex flex-col justify-center items-center space-y-10'>
-                <h1 className='font-bold'>{`Хайлтын илэрц: ${this.props.location.state.length}`}</h1>
-                    {this.props.location.state.map((el, i) => {
-                        return (
-                            <Content key={i} news={el} />
-                        )
-                    })}
-              
-            </div>
-        )
-    }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
+    const filtered = props.news.filter(el => el.title.toLowerCase().includes(props.location.state.toLowerCase()))
+
+    return (
+        <div className='m-20 flex flex-col justify-center items-center space-y-10'>
+            <h1 className='font-bold'>{`Хайлтын илэрц: ${filtered.length}`}</h1>
+            {filtered.map((el, i) => {
+                return (
+                    <Content key={i} news={el} />
+                )
+            })}
+
+        </div>
+    )
 }
+
+export default withRouter(FilteredNews);

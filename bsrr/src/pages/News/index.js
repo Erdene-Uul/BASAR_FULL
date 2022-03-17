@@ -1,54 +1,43 @@
 import React, { Component } from "react";
 import Content from "../../components/content";
-import axios from "axios";
 import BigContent from "../../components/BigContent";
 import PostBg from "../../assets/images/niitlel.png";
 import Section2 from "../../components/Section2";
-import Spinner from "../../components/Spinner";
-
 
 class News extends Component {
 
     state = {
-        news: [{}],
         section1: [],
         section2: [],
         section3: [],
-        section4: [],
-        loading: true
+        section4: []
     }
-
+    
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        axios.get(`${process.env.REACT_APP_API_URL}/api/v1/news`).then(res => {
-            this.setState({ news: res.data.data, loading: false })
-        }).finally(() => {
-
-            const sections = [[], [], [], []];
-            let index = this.state.news.length - 2;
-            for (let i = 0; i < sections.length; i++) {
-                for (let j = 0; j < 3; j++) {
-                    sections[i].push(this.state.news[index]);
-                    index--;
-                }
+        const sections = [[], [], [], []];
+        let index = this.props.news.length - 2;
+        for (let i = 0; i < sections.length; i++) {
+            for (let j = 0; j < 3; j++) {
+                sections[i].push(this.props.news[index]);
+                index--;
             }
+        }
 
-            this.setState({
-                section1: sections[0],
-                section2: sections[1],
-                section3: sections[2],
-                section4: sections[3]
-            });
-        })
-
+        this.setState({
+            section1: sections[0], 
+            section2: sections[1],
+            section3: sections[2],
+            section4: sections[3]
+        });
 
     }
 
 
     render() {
         return (
-            <div className="flex flex-col  mt-32 lg:wrapper md:tab-wrapper m-wrapper box-border">
+            <div className="flex flex-col  mt-32 lg:wrapper md:tab-wrapper m-wrapper box-border " >
                 {/*TITLE*/}
                 <div className="text-[#2F327D] md:text-3xl text-2xl font-bold text-center font-Nunito-Sans">
                     МЭДЭЭ МЭДЭЭЛЭЛ
@@ -56,13 +45,13 @@ class News extends Component {
                         Амьтдын тухай бүх мэдээллийг эндээс
                     </p>
                 </div>
-                {this.state.loading ? <Spinner /> : (<div>
+                
                     {/*SECTION 1*/}
                     <div className=" w-full lg:grid grid-cols-11 gap-4 h-auto mt-14 flex justify-center">
                         <div className="col-span-5 col-start-2 ">
                             <div>
                                 {
-                                    <BigContent news={this.state.news[this.state.news.length - 1]} />
+                                    <BigContent news={this.props.news[this.props.news.length - 1]} />
                                 }
                             </div>
                         </div>
@@ -91,7 +80,7 @@ class News extends Component {
 
                     {/*SECTION 3 - Slider*/}
                     <div className="invisible lg:visible">
-                        <Section2 news = {this.state.news}/>
+                        <Section2 news = {this.props.news}/>
                     </div>
 
                     {/*SECTION 4*/}
@@ -105,8 +94,6 @@ class News extends Component {
                         ))} </div>
                     </div>
                 </div>
-                )}
-            </div>
         );
     }
 }

@@ -39,21 +39,21 @@ const MFooter = () => {
                         <li>
                             <Link to="/">
                                 <div className="p-3 rounded-lg">
-                                    <FontAwesomeIcon icon={brands('Facebook')} size="2x" className="hover:text-[#3b5998]" />
+                                    <FontAwesomeIcon icon={brands('Facebook')} size="2x"  />
                                 </div>
                             </Link>
                         </li>
 
                         <li>
                             <div className="p-3 rounded-lg">
-                                <FontAwesomeIcon icon={brands('Instagram')} size="2x" className="hover:text-[#bc2a8d]" />
+                                <FontAwesomeIcon icon={brands('Instagram')} size="2x"  />
                             </div>
                         </li>
 
                         <li>
                             <Link to="/">
                                 <div className="p-3 rounded-lg">
-                                    <FontAwesomeIcon icon={brands('Twitter')} size="2x" className="hover:text-[#00acee]" />
+                                    <FontAwesomeIcon icon={brands('Twitter')} size="2x"  />
                                 </div>
 
                             </Link>
@@ -62,7 +62,7 @@ const MFooter = () => {
                         <li>
                             <Link to="/">
                                 <div className="p-3 rounded-lg">
-                                    <FontAwesomeIcon icon={brands('Youtube')} size="2x" className="hover:text-[#FF0000]" />
+                                    <FontAwesomeIcon icon={brands('Youtube')} size="2x"  />
                                 </div>
 
                             </Link>

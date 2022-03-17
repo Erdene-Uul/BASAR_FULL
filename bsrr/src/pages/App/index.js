@@ -13,19 +13,57 @@ import MFooter from "../../components/MobileFooter";
 import { Route, Switch } from "react-router-dom";
 import Shop from "../OnlineShop";
 import Login from "../Login";
+import axios from 'axios';
 import FilteredNews from "../FilteredNews";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import ScrollToTop from "../../components/ScrollToTop";
+import About from "../About"
+
+
+let test = 0;
 
 class App extends Component {
 
+  state = {
+    news: [],
+    showPopup: false,
+    loading: true,
+    showSideBar: false
+  };
+  toggleSideBar = () => {
+    this.setState(prevState => {
+      return { showSideBar: !prevState.showSideBar }
+    });
+  }
+  closePopup = () => {
+    this.setState({ showPopup: false });
+  }
+
+  handlePopup = () => {
+    if (test === 0) {
+      this.setState({ showPopup: true })
+      test++
+    }
+  }
+
+  componentDidMount() {
+    axios.get(`${process.env.REACT_APP_API_URL}/api/v1/news`)
+      .then(response => {
+        this.setState({ news: response.data.data, loading: false });
+      })
+      .catch(err => console.log(err))
+  }
+
+
   render() {
+
     return (
       <div>
-        <Navbar />
+        <Navbar news={this.state.news} showSideBar={this.state.showSideBar} toggleSideBar={this.toggleSideBar} />
         <main className="lg:min-h-custom min-h-full">
           <Switch>
             <Route path="/animals" component={Animals} />
-            <Route path="/news" component={News} />
+            <Route path="/news" component={() => <News news={this.state.news} />} />
             <Route path="/blog" component={Blog} />
             <Route path="/organizations" component={Organizations} />
             <Route path="/services" component={Services} />
@@ -33,8 +71,9 @@ class App extends Component {
             <Route path="/news_details" component={NewsDetails} />
             <Route path="/shop" component={Shop} />
             <Route path="/login" component={Login} />
-            <Route path="/filtered" component={FilteredNews} />
-            <Route path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/filtered" component={() => <FilteredNews news={this.state.news} />} />
+            <Route path="/" component={() => <Home loading={this.state.loading} closePopup={this.closePopup} news={this.state.news} showPopup={this.state.showPopup} handlePopup={this.handlePopup} />} />
           </Switch>
         </main>
         <MessengerCustomerChat
@@ -42,6 +81,7 @@ class App extends Component {
           appId="381346643442500"
           
         />
+        <ScrollToTop />
         <Footer />
         <MFooter />
       </div>
