@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="h-full p-8 mx-auto max-w-7xl flex justify-center items-center">
-                <div className="grid grid-cols-6  py-6 text-[#2B363F] ">
+                <div className="grid grid-cols-6 xl:pl-14 py-6 text-[#2B363F] ">
                     <div className="w-52">
                         <div className="font-medium border-orange-500 border-l-2 pl-1 mb-2">
                             АНГИЛАЛ

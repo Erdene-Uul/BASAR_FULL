@@ -8,7 +8,7 @@ class Section2 extends React.Component {
 
   render() {
     return (
-      <div className="mt-16 ">
+      <div className="mt-16  ">
         <h1 className="italic font-Roboto text-blue-700 font-extrabold text-center mt-8 z-50 md:text-2xl">
           #ОНЦЛОХ БУЛАН
         </h1>
@@ -33,7 +33,7 @@ class Section2 extends React.Component {
             </div>
 
             {/* 2xl */}
-            <div className={`2xl:flex items-stretch justify-around  w-full py-3 hidden 2xl:visible ${css}`}>
+            <div className={`2xl:flex items-stretch font-Roboto justify-around  w-full py-3 hidden 2xl:visible ${css}`}>
               <Carousel itemsToShow={4} disableArrowsOnEnd={false}>
                 {this.props.news.map((el, index) => (
                   <Card key={index} news={el} />
