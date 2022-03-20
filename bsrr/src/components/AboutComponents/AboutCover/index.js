@@ -1,5 +1,5 @@
 import React from "react";
-import AboutTitle from "../AboutTitle";
+import AboutTitle from "../AboutCoverTitle";
 import AboutBasar from "../../../assets/images/about_basar.png";
 import AboutAnswet from "../../../assets/images/about_answer.png";
 const AboutCover = () => {
