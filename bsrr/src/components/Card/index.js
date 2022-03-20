@@ -19,7 +19,7 @@ const Card = (props) => {
           src={props.news.photo}
           alt="cover_img_01"
         />
-          <h2 className="z-50 h-10 w-64 text-base leading-4 pt-3 bg-red">
+          <h2 className="z-50 h-10 w-64 text-sm leading-4 pt-3 bg-red">
           {props.news.title}
         </h2>
       </NavLink>
