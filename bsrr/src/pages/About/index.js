@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react'
+import AboutCover from "../../components/AboutComponents/AboutCover";
+import AboutSectionTitle from "../../components/AboutComponents/AboutSectionTitle";
+import AboutSectionCard from "../../components/AboutComponents/AboutSectionCard";
+
 import dog1 from '../../assets/images/About/dog1.png';
 import dog2 from '../../assets/images/About/dog2.png';
 
@@ -9,6 +13,9 @@ export default function About() {
   }, [])
   return (
     <div className=' font-Poppins mt-20'>
+       <AboutCover />
+      <AboutSectionTitle />
+      <AboutSectionCard/>
       <section className=' mx-auto flex max-w-6xl'>
 
         <div className=''>
@@ -65,4 +72,4 @@ export default function About() {
 
     </div>
   )
-}
+  }

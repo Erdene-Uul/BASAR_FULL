@@ -17,7 +17,7 @@ class News extends Component {
         section3: [],
         section4: []
     }
-
+    
 
     componentDidMount() {
         window.scrollTo(0, 0);

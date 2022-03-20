@@ -17,6 +17,7 @@ module.exports = {
         Poppins: ["Poppins"],
       },
       spacing: {
+        45: "45rem",
         34: "136px",
         42: "10.5rem",
         112: "28rem",
@@ -77,6 +78,7 @@ module.exports = {
       },
       borderRadius: {
         coverRadius: "5rem",
+        aboutRadius: "25%",
       },
       minHeight: {
         custom: "400px",

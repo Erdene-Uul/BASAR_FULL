@@ -56,6 +56,7 @@ class App extends Component {
 
 
   render() {
+
     return (
       <div>
         <Navbar news={this.state.news} showSideBar={this.state.showSideBar} toggleSideBar={this.toggleSideBar} />
