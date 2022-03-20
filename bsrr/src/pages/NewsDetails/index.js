@@ -1,8 +1,11 @@
 import React from "react";
 import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Commercial from "../../components/Commercial/commercial";
 import nl2br from "react-nl2br";
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 
 class NewsDetails extends React.Component {
@@ -68,6 +71,39 @@ class NewsDetails extends React.Component {
                         </div>
                     </div>
 
+            <div> <ul className="md:flex flex-col justify-center absolute hidden top-112 left-20 lg:left-24 xl:left-40 2xl:left-48">
+          <li>
+            <Link to="/">
+              <div className="p-3 rounded-lg">
+                <FontAwesomeIcon icon={brands('Facebook')} size="1x" />
+              </div>
+            </Link>
+          </li>
+
+          <li>
+            <div className="p-3 rounded-lg">
+              <FontAwesomeIcon icon={brands('Instagram')} size="1x" />
+            </div>
+          </li>
+
+          <li>
+            <Link to="/">
+              <div className="p-3 rounded-lg">
+                <FontAwesomeIcon icon={brands('Twitter')} size="1x" />
+              </div>
+
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/">
+              <div className="p-3 rounded-lg">
+                <FontAwesomeIcon icon={brands('Youtube')} size="1x" />
+              </div>
+
+            </Link>
+          </li>
+        </ul></div>
                 </section>
                 <aside className="w-1/3 mt-40 hidden xl:block">
                     <div className="m-10">

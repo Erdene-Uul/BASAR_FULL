@@ -41,6 +41,8 @@ module.exports = {
         ZarGreen1: "#84DB7E",
         ZarGreen2: "#BDDB7E",
         footerTop1: "#EFAB3E",
+        AboutTitle: "#2f327d",
+        AboutDesriptionColor: "#696984",
         greengradient: "rgba(180deg, #36BC49 0%, #03A21A 100%)",
         // Gradient Color
         Zaryellow1: "#F8EF7E",

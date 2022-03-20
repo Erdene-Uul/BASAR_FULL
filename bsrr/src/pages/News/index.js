@@ -6,6 +6,7 @@ import Section2 from "../../components/Section2";
 import axios from 'axios';
 import Spinner from "../../components/Spinner";
 
+
 class News extends Component {
 
     state = {
