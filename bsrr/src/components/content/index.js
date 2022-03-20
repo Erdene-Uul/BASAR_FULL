@@ -8,7 +8,7 @@ class Content extends React.Component {
             <div className="flex flex-shrink-0 sm:my-3">
                 <Link to={
                     {
-                        pathname: `/news_details/${this.props.news._id}`,
+                        pathname: `/news/${this.props.news._id}`,
                         state: { id: this.props.news._id }
                     }
                 } className="transform hover:scale-105 transition-all duration-500 ease-in-out flex flex-row">

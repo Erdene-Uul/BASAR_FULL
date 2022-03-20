@@ -8,7 +8,7 @@ class BigContent extends React.Component {
       <div className="lg:flex my-3 hidden">
         <Link
           to={ {
-            pathname: `/news_details/${this.props.news._id}`,
+            pathname: `/news/${this.props.news._id}`,
             state: { id: this.props.news._id }
         }}
           className=" transform hover:scale-105 transition-all duration-500 ease-in-out flex flex-col"

@@ -62,12 +62,12 @@ class App extends Component {
         <main className="lg:min-h-custom min-h-full">
           <Switch>
             <Route path="/animals" component={Animals} />
-            <Route path="/news" component={News} />
+            <Route exact path="/news" component={News} />
             <Route path="/blog" component={Blog} />
             <Route path="/organizations" component={Organizations} />
             <Route path="/services" component={Services} />
             <Route path="/first_aid" component={FirstAid} />
-            <Route path="/news_details/:id" component={NewsDetails} />
+            <Route path="/news/:id" component={NewsDetails} />
             <Route path="/shop" component={Shop} />
             <Route path="/login" component={Login} />
             <Route path="/about" component={About} />
