@@ -1,14 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import {withRouter} from 'react-router-dom';
 
 class Content extends React.Component {
     render() {
         return (
             <div className="flex flex-shrink-0 md:my-3">
-                <NavLink to={
+                <Link to={
                     {
-                        pathname: "/news_details",
-                        state: { news: this.props.news }
+                        pathname: `/news_details/${this.props.news._id}`,
+                        state: { id: this.props.news._id }
                     }
                 } className="transform hover:scale-105 transition-all duration-500 ease-in-out flex flex-row">
                     <div className="relative md:h-36 md:w-44  h-28 w-36">
@@ -22,9 +23,9 @@ class Content extends React.Component {
                         <h2 className="text-[#252641]  md:text-base text-sm w-44  md:w-80 leading-5 font-medium md:leading-7">{this.props.news.title}</h2>
                         <p className="text-[#696984]  text-sm mt-3 hidden md:block">{this.props.news.description}</p>
                     </div>
-                </NavLink>
+                </Link>
             </div>
         )
     }
 }
-export default Content;
+export default withRouter(Content);

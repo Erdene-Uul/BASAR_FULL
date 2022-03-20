@@ -1,15 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import {withRouter} from 'react-router-dom';
 
 class BigContent extends React.Component {
   render() {
     return (
       <div className="lg:flex my-3 hidden">
-        <NavLink
-          to={{
-            pathname: "/news_details",
-            state: { news: this.props.news },
-          }}
+        <Link
+          to={ {
+            pathname: `/news_details/${this.props.news._id}`,
+            state: { id: this.props.news._id }
+        }}
           className=" transform hover:scale-105 transition-all duration-500 ease-in-out flex flex-col"
         >
           <div className="h-64 w-112">
@@ -34,9 +35,9 @@ class BigContent extends React.Component {
               Унших
             </p>
           </div>
-        </NavLink>
+        </Link>
       </div>
     );
   }
 }
-export default BigContent;
+export default withRouter(BigContent);
