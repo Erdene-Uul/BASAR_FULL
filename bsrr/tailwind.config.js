@@ -78,7 +78,7 @@ module.exports = {
       },
       borderRadius: {
         coverRadius: "5rem",
-        aboutRadius: "25%",
+        aboutRadius: "50%",
       },
       minHeight: {
         custom: "400px",

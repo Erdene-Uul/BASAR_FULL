@@ -12,11 +12,11 @@ export default function About() {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <div className=' font-Poppins mt-20'>
+    <div className=' font-Poppins'>
        <AboutCover />
       <AboutSectionTitle />
       <AboutSectionCard/>
-      <section className=' mx-auto flex max-w-6xl'>
+      <section className=' mx-auto flex max-w-6xl mt-36'>
 
         <div className=''>
           <h1 className='text-3xl text-[#2F327D] '>Танилцуулга видео</h1>

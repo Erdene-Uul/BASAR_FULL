@@ -6,8 +6,8 @@ const Card = (props) => {
     <div className="flex flex-shrink-0 pb-6 pt-2">
       <NavLink
         to={{
-          pathname: "/news_details",
-          state: { news: props.news },
+          pathname: `/news/${props.news._id}`,
+          state: { id: props.news._id }
         }}
         className="relative transform hover:scale-105 transition-all duration-500 ease-in-out"
       >
