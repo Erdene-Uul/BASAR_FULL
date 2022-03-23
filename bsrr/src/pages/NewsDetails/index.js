@@ -61,12 +61,12 @@ class NewsDetails extends React.Component {
                             <div className="md:ml-10 ml-3 border-l border-[#B8B8B9] text-xs md:px-6 px-2 flex justify-center items-center font-[#B9BABA]">{this.state.news.createdAt.substring(0, 10)}</div>
                         </div>
                         <div className="text-[#464C53]">
-                            <div className="whitespace-pre-wrap xl:leading-7 leading-6 md:text-base text-sm">  {nl2br(this.state.news.content.content1.replace(/lnbr/g, "\n\n"))}</div>
+                            <div className="whitespace-pre-wrap xl:leading-7 leading-6 md:text-base text-sm">  {nl2br(this.state.news.content.content1.replace(/lnbr/g, "\n\n").replace(/lnbr1/g, "\n"))}</div>
                             <div className="">
                                 <img className="xl:h-96 xl:my-6 h-auto my-3 border" alt="news" src={this.state.news.photo} />
                             </div>
                             <div className="whitespace-pre-wrap xl:leading-7 leading-6 md:text-base text-sm">
-                                {nl2br(this.state.news.content.content2.replace(/lnbr/g, "\n\n"))}
+                                {nl2br((this.state.news.content.content2.replace(/lnbr/g, "\n\n")).replace(/lnbr1/g, "\n"))}
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ const AboutSectionCard = () => {
     //   Card
     <div className="wrapper mt-20 ">
       <div className="flex justify-around flex-wrap ">
-        <div className="w-56 h-56 mt-12 shadow-lg flex justify-center relative">
+        <div className="w-72 h-72 mt-12 shadow-lg flex justify-center relative">
           <div className="w-14 h-14 rounded-full bg-[#5b72ee] -mt-6 absolute shadow-md  text-center flex justify-center items-center ">
             <FontAwesomeIcon
               icon={solid("file-invoice")}
@@ -15,11 +15,11 @@ const AboutSectionCard = () => {
               className="text-white"
             />
           </div>
-          <div className="flex flex-col w-56 items-center ">
-            <h1 className="text-AboutTitle w-28 text-center mt-12 leading-4  ">
+          <div className="flex flex-col w-64 items-center ">
+            <h1 className="text-AboutTitle w-28 text-xl font-medium text-center mt-12 leading-7  ">
               Амьтадын төлөө
             </h1>
-            <p className=" my-4 mx-8 text-xs text-center font-thin text-AboutDesriptionColor">
+            <p className=" my-4 mx-8 text-sm text-center font-light text-AboutDesriptionColor">
               the readable content of a page when looking at its It is a long
               established fact that a reader will be
             </p>
@@ -27,7 +27,7 @@ const AboutSectionCard = () => {
 
           {/*   */}
         </div>
-        <div className="w-56 h-56 mt-12 shadow-lg flex justify-center relative">
+        <div className="w-72 h-72 mt-12 shadow-lg flex justify-center relative">
           {" "}
           <div className="w-14 h-14 rounded-full bg-[#f48c06] -mt-6 absolute shadow-md text-center flex justify-center items-center">
           <FontAwesomeIcon
@@ -36,17 +36,16 @@ const AboutSectionCard = () => {
               className="text-white"
             />
           </div>
-          <div className="flex flex-col w-56 items-center">
-            <h1 className="text-AboutTitle w-28 text-center mt-12 leading-4  ">
+          <div className="flex flex-col w-64 items-center">
+            <h1 className="text-AboutTitle w-28 text-xl font-medium text-center mt-12 leading-7  ">
               Нэгдсэн нэг флатформ
             </h1>
-            <p className=" my-4 mx-8 text-xs text-center font-thin text-AboutDesriptionColor">
-              the readable content of a page when looking at its It is a long
-              established fact that a reader will be
+            <p className=" my-4 mx-8 text-sm text-center font-light text-AboutDesriptionColor">
+            Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance
             </p>
           </div>
         </div>
-        <div className="w-56 h-56 mt-12 shadow-lg flex justify-center relative">
+        <div className="w-72 h-72 mt-12 shadow-lg flex justify-center relative">
           {" "}
           <div className="w-14 h-14 rounded-full bg-[#29b9e7] -mt-6 absolute shadow-md text-center flex justify-center items-center">
           <FontAwesomeIcon
@@ -55,13 +54,12 @@ const AboutSectionCard = () => {
               className="text-white"
             />
           </div>
-          <div className="flex flex-col w-56 items-center">
-            <h1 className="text-AboutTitle w-28 text-center mt-12 leading-4  ">
+          <div className="flex flex-col w-64 items-center">
+            <h1 className="text-AboutTitle w-28 text-xl font-medium text-center mt-12 leading-7  ">
               Хамтдаа нэгдэцгээе
             </h1>
-            <p className=" my-4 mx-8 text-xs text-center font-thin text-AboutDesriptionColor">
-              the readable content of a page when looking at its It is a long
-              established fact that a reader will be
+            <p className=" my-4 mx-8 text-sm text-center font-light text-AboutDesriptionColor">
+            Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization 
             </p>
           </div>
         </div>
