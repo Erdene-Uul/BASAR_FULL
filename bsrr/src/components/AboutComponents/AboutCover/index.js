@@ -5,7 +5,7 @@ import AboutAnswet from "../../../assets/images/about_answer.png";
 
 const AboutCover = () => {
   return (
-    <div className=" w-[150%] flex md:h-45 h-96 m-auto rounded-b-aboutRadius bg-OrangeMain relative overflow-hidden ">
+    <div className=" w-full flex md:h-45 h-96 m-auto rounded-b-aboutRadius bg-OrangeMain relative overflow-hidden ">
      <div className="max-w-7xl mx-auto flex justify-between p-6">
      <AboutTitle />
      <div className="ml-120">

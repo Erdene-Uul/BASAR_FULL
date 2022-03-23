@@ -5,6 +5,14 @@ import AboutSectionCard from "../../components/AboutComponents/AboutSectionCard"
 
 import dog1 from '../../assets/images/About/dog1.png';
 import dog2 from '../../assets/images/About/dog2.png';
+import partner1 from '../../assets/images/partners/pro_official.png';
+import partner2 from '../../assets/images/partners/pro_official1.png';
+import partner3 from '../../assets/images/partners/pro_official2.png';
+import partner4 from '../../assets/images/partners/pro_official3.png';
+import Section3 from '../../components/Section3';
+import Section4 from '../../components/Section4';
+import Section5 from '../../components/Section5';
+
 
 
 export default function About() {
@@ -40,7 +48,7 @@ export default function About() {
         </div>
       </section>
       <section className=' mx-auto flex max-w-6xl flex-col items-center my-20'>
-        <h1 className='text-4xl text-[#2F327D] font-semibold '>Бидний хийж <span className='text-[#F4B767]'>буй ажлууд</span></h1>
+        <h1 className='text-4xl text-[#2F327D] font-semibold font-Poppins '>Бидний хийж <span className='text-[#F4B767]'>буй ажлууд</span></h1>
         <p className="text-[#696984] max-w-3xl text-base leading-7 my-4 text-center">
           Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.          </p>
         <div className='flex max-w-5xl mx-auto mt-9'>
@@ -69,6 +77,64 @@ export default function About() {
 
         </div>
       </section>
+      <section className=' mx-auto flex max-w-7xl flex-col items-center mt-5 mb-20'>
+      <h1 className="text-AboutTitle font-Poppins font-medium text-2xl text-center mb-4 md:text-3xl xl:text-4xl">
+              Хамтрагч 
+        <span className="text-btnOrange block lg:inline "> байгууллагууд</span>
+      </h1>
+      <h1 className='font-Nunito-Sans text-[#616161] text-2xl'>Төрийн бус байгууллагууд:</h1>
+      <div className='grid grid-cols-6 gap-14 text-[#252641] my-10 '>
+        <div className=' '>
+        <img className="w-24 h-24 mb-3"
+              alt="partner1"
+              src={partner1}
+            />
+            <p>Азтай Савар ТББ</p>
+        </div>
+        <div className=' '>
+        <img className=" w-24 h-24 mb-3"
+              alt="partner2"
+              src={partner2}
+            />
+            <p>WWF</p>
+        </div>
+       
+        <div className=' '>
+        <img className="w-24 h-24 mb-3"
+              alt="partner3"
+              src={partner3}
+            />
+            <p>Animal Health</p>
+        </div>
+        <div className=' '>
+        <img className="w-24 h-24 mb-3"
+              alt="partner4"
+              src={partner4}
+            />
+            <p>UB shelter</p>
+        </div>
+        <div className=' '>
+        <img className="w-24 h-24 mb-3"
+              alt="partner1"
+              src={partner1}
+            />
+             <p>Азтай Савар ТББ</p>
+        </div>
+        <div className=''>
+        <img className=" w-24 h-24 mb-3"
+              alt="partner2"
+              src={partner2}
+            />
+              <p>WWF</p>
+        </div>
+      </div>
+
+      </section>
+
+
+      <Section3 />
+      <Section4 />
+      <Section5 />
 
     </div>
   )
