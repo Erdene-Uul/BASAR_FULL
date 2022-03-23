@@ -1,4 +1,3 @@
-const { faRightToBracket } = require("@fortawesome/free-solid-svg-icons");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
