@@ -5,13 +5,11 @@ import AboutSectionCard from "../../components/AboutComponents/AboutSectionCard"
 
 import dog1 from '../../assets/images/About/dog1.png';
 import dog2 from '../../assets/images/About/dog2.png';
-import partner1 from '../../assets/images/partners/pro_official.png';
-import partner2 from '../../assets/images/partners/pro_official1.png';
-import partner3 from '../../assets/images/partners/pro_official2.png';
-import partner4 from '../../assets/images/partners/pro_official3.png';
+
 import Section3 from '../../components/Section3';
 import Section4 from '../../components/Section4';
 import Section5 from '../../components/Section5';
+import Partners from '../../components/AboutComponents/Partners';
 
 
 
@@ -24,22 +22,21 @@ export default function About() {
        <AboutCover />
       <AboutSectionTitle />
       <AboutSectionCard/>
-      <section className=' mx-auto flex max-w-6xl mt-36'>
-
-        <div className=''>
+      <section className=' mx-auto flex lg:flex-row flex-col items-center lg:max-w-6xl mt-36'>
+      <h1 className='text-xl text-[#F48C06] mb-7 lg:hidden'>Танилцуулга</h1>
+        <div className='hidden lg:block'>
           <h1 className='text-3xl text-[#2F327D] '>Танилцуулга видео</h1>
-          <p className="text-[#696984] w-112 text-base leading-7 mt-4">
+          <p className="text-[#696984] w-112 text-base leading-7 mt-4 ">
             Skilline’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.
           </p>
           <p className="text-[#696984] underline hover:underline-offset-2 text-sm mt-3">
             Дэлгэрэнгүй
           </p></div>
-        <div className='ml-56'>
+        <div className='lg:ml-56'>
           <iframe
-            className='rounded-lg'
-            width="505"
-            height="301"
-            src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+            className='rounded-lg lg:h-[301px] lg:w-[505px] h-64 w-96'
+            
+            src="https://www.youtube.com/embed/C_nJJHaNmnY"
             frameborder="0"
             allow="autoplay; accelerometer; encrypted-media"
             allowFullScreen
@@ -49,11 +46,11 @@ export default function About() {
       </section>
       <section className=' mx-auto flex max-w-6xl flex-col items-center my-20'>
         <h1 className='text-4xl text-[#2F327D] font-semibold font-Poppins '>Бидний хийж <span className='text-[#F4B767]'>буй ажлууд</span></h1>
-        <p className="text-[#696984] max-w-3xl text-base leading-7 my-4 text-center">
+        <p className="text-[#696984] max-w-3xl text-base leading-7 my-4 text-center hidden lg:block">
           Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.          </p>
-        <div className='flex max-w-5xl mx-auto mt-9'>
+        <div className='flex lg:max-w-5xl flex-col items-center mx-auto mt-9'>
 
-          <div className=' w-120 h-80 mr-32 flex justify-center flex-col items-center'>
+          <div className=' lg:w-120 lg:h-80 h-64 w-96 lg:mr-32 flex justify-center flex-col items-center'>
            <div className='absolute'>
            <h1 className=' text-white text-3xl font-semibold w-80 text-center'>Амьтдыг хамгаалах сан гэж юу вэ?</h1>
             <button className='ml-20 mt-4 text-white border rounded-3xl border-white px-7 py-2'>Дэлгэрэнгүй</button>
@@ -63,7 +60,7 @@ export default function About() {
               src={dog1}
             />
           </div>
-          <div className=" w-120 h-80 l flex justify-center flex-col items-center relative ">
+          <div className="mt-10 lg:mt-0 lg:w-120 lg:h-80 h-64 w-96 flex justify-center flex-col items-center  ">
             <div className='absolute'> 
             <h1 className=' text-white text-3xl font-semibold w-80 text-center'>Амьтдыг хамгаалах хууль эрх зүй</h1>
               <button className='ml-20 mt-4 text-white border border-[#33b5dde5] rounded-3xl bg-[#23BDEEE5] px-7 py-2'>Дэлгэрэнгүй</button>
@@ -77,60 +74,8 @@ export default function About() {
 
         </div>
       </section>
-      <section className=' mx-auto flex max-w-7xl flex-col items-center mt-5 mb-20'>
-      <h1 className="text-AboutTitle font-Poppins font-medium text-2xl text-center mb-4 md:text-3xl xl:text-4xl">
-              Хамтрагч 
-        <span className="text-btnOrange block lg:inline "> байгууллагууд</span>
-      </h1>
-      <h1 className='font-Nunito-Sans text-[#616161] text-2xl'>Төрийн бус байгууллагууд:</h1>
-      <div className='grid grid-cols-6 gap-14 text-[#252641] my-10 '>
-        <div className=' '>
-        <img className="w-24 h-24 mb-3"
-              alt="partner1"
-              src={partner1}
-            />
-            <p>Азтай Савар ТББ</p>
-        </div>
-        <div className=' '>
-        <img className=" w-24 h-24 mb-3"
-              alt="partner2"
-              src={partner2}
-            />
-            <p>WWF</p>
-        </div>
-       
-        <div className=' '>
-        <img className="w-24 h-24 mb-3"
-              alt="partner3"
-              src={partner3}
-            />
-            <p>Animal Health</p>
-        </div>
-        <div className=' '>
-        <img className="w-24 h-24 mb-3"
-              alt="partner4"
-              src={partner4}
-            />
-            <p>UB shelter</p>
-        </div>
-        <div className=' '>
-        <img className="w-24 h-24 mb-3"
-              alt="partner1"
-              src={partner1}
-            />
-             <p>Азтай Савар ТББ</p>
-        </div>
-        <div className=''>
-        <img className=" w-24 h-24 mb-3"
-              alt="partner2"
-              src={partner2}
-            />
-              <p>WWF</p>
-        </div>
-      </div>
-
-      </section>
-
+   
+      <Partners/>
 
       <Section3 />
       <Section4 />

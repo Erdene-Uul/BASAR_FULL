@@ -48,7 +48,8 @@ const Sidebar = (props) => {
         <div className="mx-auto border-b-2 w-4/5 h-4 border-[#DBDBDB]"></div>
         <ul className="flex justify-center">
           <li>
-            <Link to="/">
+            <Link to={{ pathname: "https://www.facebook.com/Basarmn-110141001402215/" }}
+                                                 target="_blanck">
               <div className="p-3 rounded-lg">
                 <FontAwesomeIcon icon={brands('Facebook')} size="1x" />
               </div>

@@ -16,7 +16,7 @@ const Navbar = (props) => {
   }
 
   return (
-    <nav className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-xl justify-between ">
+    <nav className="w-full lg:h-14 h-11 md: bg-white shadow flex fixed top-0 right-0 left-0 z-20 drop-shadow-2xl justify-between ">
       <div className="fixed top-3 left-3 z-50">
         {" "}
         <button

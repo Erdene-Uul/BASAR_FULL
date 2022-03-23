@@ -73,7 +73,8 @@ class NewsDetails extends React.Component {
 
             <div> <ul className="md:flex flex-col justify-center absolute hidden top-112 left-20 lg:left-24 xl:left-40 2xl:left-48">
           <li>
-            <Link to="/">
+            <Link to={{ pathname: "https://www.facebook.com/Basarmn-110141001402215/" }}
+                                                 target="_blanck">
               <div className="p-3 rounded-lg">
                 <FontAwesomeIcon icon={brands('Facebook')} size="1x" />
               </div>
