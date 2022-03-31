@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
+
 import AboutCover from "../../components/AboutComponents/AboutCover";
 import AboutSectionTitle from "../../components/AboutComponents/AboutSectionTitle";
 import AboutSectionCard from "../../components/AboutComponents/AboutSectionCard";
 
 import dog1 from "../../assets/images/About/dog1.png";
 import dog2 from "../../assets/images/About/dog2.png";
+import about from "../../assets/images/About/about.png";
 
 import Section3 from "../../components/Section3";
 import Section4 from "../../components/Section4";
@@ -21,10 +23,10 @@ export default function About() {
       <AboutSectionTitle />
       <AboutSectionCard />
       <section className=" mx-auto flex lg:flex-row flex-col items-center lg:max-w-6xl mt-20 lg:pl-20">
-        <h1 className="text-xl sm:text-4xl text-[#F48C06] mb-7 lg:hidden">
+        <h1 className="text-xl sm:text-4xl font-semibold font-Poppins text-[#F48C06] mb-7 lg:hidden">
           Танилцуулга
         </h1>
-        <div className="hidden lg:block">
+        <div className="hidden  lg:block">
           <h1 className="text-3xl text-[#2F327D] ">Танилцуулга видео</h1>
           <p className="text-[#696984] xl:w-112 w-96 xl:text-lg text-base leading-7 mt-4 ">
             Skilline’s school management software helps traditional and online
@@ -39,7 +41,7 @@ export default function About() {
           <iframe
             className="rounded-lg lg:h-64 lg:w-96 sm:h-[301px] sm:w-[505px] h-56 w-[300px]"
             src="https://www.youtube.com/embed/C_nJJHaNmnY"
-            frameborder="0"
+            frameBorder="0"
             allow="autoplay; accelerometer; encrypted-media"
             allowFullScreen
             title="video"
@@ -82,7 +84,107 @@ export default function About() {
           </div>
         </div>
       </section>
+      <section className=" mx-auto flex max-w-6xl flex-col items-center my-20 p-10">
+        <h1 className="sm:text-4xl text-xl mb-4 text-center leading-none text-[#2F327D] font-semibold font-Poppins ">
+          Тэд бидний
+          <span className="text-[#F4B767] block"> тухай</span>
+        </h1>
 
+        <div className="flex justify-evenly  flex-wrap ">
+          <div className="w-[300px] md:w-96 shadow-lg  mt-12 rounded-2xl border-l-8 border-[#F67766] ">
+            <div className=" flex p-4 ">
+              <img
+                className="h-14 rounded-full mr-3 "
+                alt="aboutt"
+                src={about}
+              />
+              <div className="text-xs md:text-sm w-64 md:w-72  font-light my-auto text-AboutDesriptionColor">
+                "Thank you so much for your help. It's exactly what I've been
+                looking for. You won't regret it. It really saves me time and
+                effort."
+                <ul className="text-xs md:text-sm flex justify-between items-center mt-4">
+                  <li className="font-normal  text-AboutDesriptionColor">
+                    Gloria Rose
+                  </li>
+
+                  <li className="font-light  text-[#80819A]">
+                    12 reviews at Yelp
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="w-[300px] md:w-96 shadow-lg  mt-12 rounded-2xl border-l-8 border-[#F67766] ">
+            <div className=" flex p-4 ">
+              <img
+                className="h-14 rounded-full mr-3 "
+                alt="aboutt"
+                src={about}
+              />
+              <div className="text-xs md:text-sm w-64 md:w-72  font-light my-auto text-AboutDesriptionColor">
+                "Thank you so much for your help. It's exactly what I've been
+                looking for. You won't regret it. It really saves me time and
+                effort."
+                <ul className="text-xs md:text-sm flex justify-between items-center mt-4">
+                  <li className="font-normal  text-AboutDesriptionColor">
+                    Gloria Rose
+                  </li>
+
+                  <li className="font-light  text-[#80819A]">
+                    12 reviews at Yelp
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="w-[300px] md:w-96 shadow-lg  mt-12 rounded-2xl border-l-8 border-[#F67766] ">
+            <div className=" flex p-4 ">
+              <img
+                className="h-14 rounded-full mr-3 "
+                alt="aboutt"
+                src={about}
+              />
+              <div className="text-xs md:text-sm w-64 md:w-72  font-light my-auto text-AboutDesriptionColor">
+                "Thank you so much for your help. It's exactly what I've been
+                looking for. You won't regret it. It really saves me time and
+                effort."
+                <ul className="text-xs md:text-sm flex justify-between items-center mt-4">
+                  <li className="font-normal  text-AboutDesriptionColor">
+                    Gloria Rose
+                  </li>
+
+                  <li className="font-light  text-[#80819A]">
+                    12 reviews at Yelp
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="w-[300px] md:w-96 shadow-lg  mt-12 rounded-2xl border-l-8 border-[#F67766] ">
+            <div className=" flex p-4 ">
+              <img
+                className="h-14 rounded-full mr-3 "
+                alt="aboutt"
+                src={about}
+              />
+              <div className="text-xs md:text-sm w-64 md:w-72  font-light my-auto text-AboutDesriptionColor">
+                "Thank you so much for your help. It's exactly what I've been
+                looking for. You won't regret it. It really saves me time and
+                effort."
+                <ul className="text-xs md:text-sm flex justify-between items-center mt-4">
+                  <li className="font-normal  text-AboutDesriptionColor">
+                    Gloria Rose
+                  </li>
+
+                  <li className="font-light  text-[#80819A]">
+                    12 reviews at Yelp
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Partners />
 
       <Section3 />

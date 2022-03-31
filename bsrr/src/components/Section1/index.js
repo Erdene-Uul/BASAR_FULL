@@ -4,22 +4,11 @@ import { Link } from "react-router-dom";
 
 import { withRouter } from "react-router-dom";
 
-<<<<<<< Updated upstream
 const Section1 = () => {
-  const [search, setSearch] = useState('');
-  const onChange = (e) => {
-    setSearch(e.target.value)
-  }
-=======
-const Section1 = (props) => {
   const [search, setSearch] = useState("");
   const onChange = (e) => {
     setSearch(e.target.value);
   };
-  let filtered = props.news.filter((el) =>
-    el.title.toLowerCase().includes(search)
-  );
->>>>>>> Stashed changes
   return (
     <section className="w-full h-96 top-0 bg-OrangeMain rounded-b-coverRadius ">
       <div className="flex justify-center">
@@ -33,27 +22,24 @@ const Section1 = (props) => {
             type="text"
             className="px-4 py-2 md:w-80 w-64 rounded-full relative text-sm md:text-base  focus:outline-none"
             placeholder="Хайх утгаа оруулна уу"
-          />{search ?
-            <Link to={
-              {
+          />
+          {search ? (
+            <Link
+              to={{
                 pathname: "/filtered",
-                state: search
-              }
-            }
-              className="absolute ml-48 md:ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
-              <button
-                className=" md:px-6 md:py-2  py-[6px] px-4"
-              >
+                state: search,
+              }}
+              className="absolute ml-48 md:ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500"
+            >
+              <button className=" md:px-6 md:py-2  py-[6px] px-4">Хайх</button>
+            </Link>
+          ) : (
+            <div className="absolute ml-48 md:ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500">
+              <button className=" md:px-6 md:py-2  py-[6px] px-4  ">
                 Хайх
               </button>
-            </Link>:<div className="absolute ml-48 md:ml-64 text-white bg-btnYagaan border-l rounded-full  hover:bg-orange-500" >
-            <button
-              className=" md:px-6 md:py-2  py-[6px] px-4  "
-            >
-              Хайх
-            </button>
-          </div>
-          }
+            </div>
+          )}
         </div>
       </div>
     </section>

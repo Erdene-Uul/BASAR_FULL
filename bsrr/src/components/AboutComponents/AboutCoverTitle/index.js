@@ -4,8 +4,8 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const AboutTitle = () => {
   return (
-    <div className=" absolute lg:mt-34 md:mt-24 sm:mt-20 mt-10 text-AboutTitle ">
-      <h1 className="font-Roboto md:text-3xl text-lg font-semibold pb-4">
+    <div className=" absolute lg:mt-34 mt-24  text-AboutTitle ">
+      <h1 className="font-Roboto md:text-3xl text-sm font-semibold pb-4">
         <span className="block text-btnOrange ">Амьтанд хайртай</span> Бүх
         хүмүүст зориулав
       </h1>
@@ -20,7 +20,7 @@ const AboutTitle = () => {
         </span>
       </p>
       <div className="flex md:mt-6">
-        <button className="bg-btnOrange text-white duration-500 md:px-4 md:py-2 px-3 mr-2 lg:mr-4 hover:bg-orange-700 rounded-3xl lg:text-sm text-xs font-Roboto ">
+        <button className="bg-btnOrange text-white duration-500 md:px-4 md:py-2 px-2 py-1 mr-2 lg:mr-4 hover:bg-orange-700 rounded-3xl lg:text-sm text-xs font-Roboto ">
           Бидэнтэй нэгдэх
         </button>
 
