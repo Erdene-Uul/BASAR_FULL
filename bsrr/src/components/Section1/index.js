@@ -1,25 +1,29 @@
 import React, { useState } from "react";
-import cover_logo from '../../assets/images/menu_logo/cover_logo.png';
+import cover_logo from "../../assets/images/menu_logo/cover_logo.png";
 import { Link } from "react-router-dom";
-
 
 import { withRouter } from "react-router-dom";
 
+<<<<<<< Updated upstream
 const Section1 = () => {
   const [search, setSearch] = useState('');
   const onChange = (e) => {
     setSearch(e.target.value)
   }
+=======
+const Section1 = (props) => {
+  const [search, setSearch] = useState("");
+  const onChange = (e) => {
+    setSearch(e.target.value);
+  };
+  let filtered = props.news.filter((el) =>
+    el.title.toLowerCase().includes(search)
+  );
+>>>>>>> Stashed changes
   return (
-    <section
-      className="w-full h-96 top-0 bg-OrangeMain rounded-b-coverRadius "
-    >
+    <section className="w-full h-96 top-0 bg-OrangeMain rounded-b-coverRadius ">
       <div className="flex justify-center">
-        <img
-          className="mt-24 h-20"
-          src={cover_logo}
-          alt="Basar cover_logo "
-        />
+        <img className="mt-24 h-20" src={cover_logo} alt="Basar cover_logo " />
       </div>
       {/* <!-- cover дээрх search input style --> */}
       <div className="flex items-center justify-center mt-10">
@@ -52,7 +56,7 @@ const Section1 = () => {
           }
         </div>
       </div>
-    </section >
+    </section>
   );
-}
+};
 export default withRouter(Section1);

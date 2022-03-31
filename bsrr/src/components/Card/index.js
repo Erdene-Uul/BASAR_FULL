@@ -15,7 +15,7 @@ const Card = (props) => {
           {props.news.categoryName}
         </button>
         <img
-          className="h-48 rounded-lg"
+          className="h-44 rounded-lg"
           src={props.news.photo}
           alt="cover_img_01"
         />
