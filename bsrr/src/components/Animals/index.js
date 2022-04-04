@@ -10,7 +10,7 @@ import humster from "../../assets/images/animals/humster.png";
 import { Link } from "react-router-dom";
 const Animals = () => {
   return (
-    <section className=" my-16 md:my-24 h-52.0625rem  max-w-7xl mx-auto md:p-12 p-3">
+    <section className=" my-16 md:my-24   max-w-7xl mx-auto md:p-12 p-3">
       <h1 className=" uppercase md:text-2xl italic ml-4 font-Roboto text-blue-700 font-extrabold  my-10 relative">
         #Амьтад
       </h1>
